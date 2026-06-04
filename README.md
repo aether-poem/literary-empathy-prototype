@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Literary Empathy Prototype
 
 An experimental digital humanities prototype for exploring literary empathy through multi-perspective storytelling, based on James Joyce's *The Dead*.
@@ -100,3 +101,7 @@ MIT License
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to submit issues and pull requests.
+=======
+# literary-empathy-prototype
+An experimental digital humanities prototype for exploring literary empathy through multi-perspective storytelling
+>>>>>>> 6deb234bfb0409bbd66fdc02ea1e39faf7e310af
