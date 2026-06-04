@@ -1,0 +1,76 @@
+{
+  "objects": [
+    {
+      "id": "object_piano",
+      "name": "Piano",
+      "description": "An old upright piano with faded ivory keys.",
+      "location": "Drawing Room",
+      "interactable": true,
+      "unlocksMemory": "gabriel_1",
+      "hint": "Music lingers in the air..."
+    },
+    {
+      "id": "object_window",
+      "name": "Window",
+      "description": "A tall window overlooking the snowy garden.",
+      "location": "Drawing Room",
+      "interactable": true,
+      "unlocksMemory": "gretta_1",
+      "hint": "The snow falls gently outside."
+    },
+    {
+      "id": "object_fireplace",
+      "name": "Fireplace",
+      "description": "A crackling fire casts warm shadows on the walls.",
+      "location": "Drawing Room",
+      "interactable": true,
+      "unlocksMemory": "julia_1",
+      "hint": "Memories flicker like flames."
+    },
+    {
+      "id": "object_photograph",
+      "name": "Photograph",
+      "description": "A faded portrait of a young man in a frame.",
+      "location": "Hallway",
+      "interactable": true,
+      "unlocksMemory": "michael_1",
+      "hint": "A face from the past stares back."
+    },
+    {
+      "id": "object_letter",
+      "name": "Letter",
+      "description": "A crumpled letter tucked under a vase.",
+      "location": "Dining Room",
+      "interactable": true,
+      "unlocksMemory": "gretta_2",
+      "hint": "Words left unspoken..."
+    },
+    {
+      "id": "object_mirror",
+      "name": "Mirror",
+      "description": "An ornate mirror reflecting the room.",
+      "location": "Bedroom",
+      "interactable": true,
+      "unlocksMemory": "gabriel_3",
+      "hint": "What do you see when you look?"
+    },
+    {
+      "id": "object_cloak",
+      "name": "Old Cloak",
+      "description": "A worn cloak hanging by the door.",
+      "location": "Entrance Hall",
+      "interactable": true,
+      "unlocksMemory": "michael_2",
+      "hint": "The cold still lingers..."
+    },
+    {
+      "id": "object_tea_set",
+      "name": "Tea Set",
+      "description": "A delicate porcelain tea set on a tray.",
+      "location": "Kitchen",
+      "interactable": true,
+      "unlocksMemory": "mary_1",
+      "hint": "Warmth in a cup."
+    }
+  ]
+}

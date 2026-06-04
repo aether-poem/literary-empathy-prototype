@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    { "id": "gabriel", "type": "character", "label": "Gabriel", "characterId": "gabriel" },
+    { "id": "gretta", "type": "character", "label": "Gretta", "characterId": "gretta" },
+    { "id": "michael", "type": "character", "label": "Michael", "characterId": "michael" },
+    { "id": "julia", "type": "character", "label": "Aunt Julia", "characterId": "julia" },
+    { "id": "mary", "type": "character", "label": "Aunt Mary", "characterId": "mary" },
+    { "id": "dance", "type": "event", "label": "Christmas Dance" },
+    { "id": "song", "type": "event", "label": "The Lass of Aughrim" },
+    { "id": "snow", "type": "theme", "label": "Snow/Mortality" },
+    { "id": "memory", "type": "theme", "label": "Memory" }
+  ],
+  "edges": [
+    { "id": "gabriel_gretta", "source": "gabriel", "target": "gretta", "relationType": "romantic", "strength": 0.8, "directional": false, "visible": true },
+    { "id": "gretta_michael", "source": "gretta", "target": "michael", "relationType": "love", "strength": 0.95, "directional": false, "visible": false },
+    { "id": "gabriel_julia", "source": "gabriel", "target": "julia", "relationType": "family", "strength": 0.7, "directional": false, "visible": true },
+    { "id": "gabriel_mary", "source": "gabriel", "target": "mary", "relationType": "family", "strength": 0.6, "directional": false, "visible": true },
+    { "id": "julia_mary", "source": "julia", "target": "mary", "relationType": "family", "strength": 0.9, "directional": false, "visible": true },
+    { "id": "dance_gabriel", "source": "dance", "target": "gabriel", "relationType": "memory", "strength": 0.7, "directional": true, "visible": true },
+    { "id": "dance_gretta", "source": "dance", "target": "gretta", "relationType": "memory", "strength": 0.8, "directional": true, "visible": true },
+    { "id": "song_gretta", "source": "song", "target": "gretta", "relationType": "memory", "strength": 0.95, "directional": true, "visible": false },
+    { "id": "song_michael", "source": "song", "target": "michael", "relationType": "memory", "strength": 1.0, "directional": true, "visible": false },
+    { "id": "snow_michael", "source": "snow", "target": "michael", "relationType": "memory", "strength": 1.0, "directional": true, "visible": false },
+    { "id": "snow_gabriel", "source": "snow", "target": "gabriel", "relationType": "memory", "strength": 0.85, "directional": true, "visible": true },
+    { "id": "memory_gretta", "source": "memory", "target": "gretta", "relationType": "memory", "strength": 0.9, "directional": true, "visible": true },
+    { "id": "memory_gabriel", "source": "memory", "target": "gabriel", "relationType": "memory", "strength": 0.75, "directional": true, "visible": true }
+  ]
+}

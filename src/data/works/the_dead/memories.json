@@ -1,0 +1,229 @@
+{
+  "fragments": [
+    {
+      "id": "gabriel_1",
+      "characterId": "gabriel",
+      "title": "The Speech",
+      "content": "I stood before the guests, my voice trembling slightly as I began my speech. I spoke of the past, of old friends and cherished traditions. But beneath the words, I felt a strange emptiness, as if I were performing rather than speaking from the heart.",
+      "sensoryDetails": {
+        "visual": "The soft glow of gas lamps on polished silver",
+        "auditory": "The murmur of voices, the rustle of silk dresses",
+        "tactile": "The coldness of the champagne flute in my hand"
+      },
+      "context": {
+        "time": "Christmas Eve, evening",
+        "place": "Aunt Julia's drawing room",
+        "situation": "Delivering the annual Christmas speech"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "anxiety",
+        "intensity": 0.7,
+        "valence": -0.5
+      },
+      "reliability": 0.9,
+      "narrativePosition": 1,
+      "emotionTag": "fear",
+      "connectedFragments": ["gabriel_2", "gretta_1"]
+    },
+    {
+      "id": "gabriel_2",
+      "characterId": "gabriel",
+      "title": "Gretta's Distraction",
+      "content": "I noticed Gretta standing by the window, listening to the song. There was a look on her face I had never seen before - a look of such deep longing that it frightened me. I called her name, but she did not hear. In that moment, I realized I did not know the woman I had married.",
+      "sensoryDetails": {
+        "visual": "Gretta's silhouette against the dark window",
+        "auditory": "The faint strains of 'The Lass of Aughrim'",
+        "tactile": "The chill of realization creeping over me"
+      },
+      "context": {
+        "time": "Christmas Eve, late evening",
+        "place": "Aunt Julia's drawing room",
+        "situation": "Observing Gretta during the party"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "fear",
+        "intensity": 0.8,
+        "valence": -0.8
+      },
+      "reliability": 0.85,
+      "narrativePosition": 2,
+      "emotionTag": "fear",
+      "connectedFragments": ["gabriel_3", "gretta_2"]
+    },
+    {
+      "id": "gabriel_3",
+      "characterId": "gabriel",
+      "title": "The Epiphany",
+      "content": "As I watched the snow falling outside, I understood. All my life I had been living in a dream, blind to the reality of those around me. Gretta had loved another, and that love had been greater than anything I could offer. The dead were not truly dead - they lived on in the memories of the living.",
+      "sensoryDetails": {
+        "visual": "Snowflakes falling silently in the moonlight",
+        "auditory": "The distant music from the party fading",
+        "tactile": "The cold glass against my forehead"
+      },
+      "context": {
+        "time": "Christmas Eve, midnight",
+        "place": "Hotel room",
+        "situation": "After returning from the party"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "sadness",
+        "intensity": 0.9,
+        "valence": -0.9
+      },
+      "reliability": 0.95,
+      "narrativePosition": 6,
+      "emotionTag": "loss",
+      "connectedFragments": ["gretta_2", "michael_2"]
+    },
+    {
+      "id": "gretta_1",
+      "characterId": "gretta",
+      "title": "The Song",
+      "content": "The song drifted across the room, and suddenly I was back in Galway, standing in the rain, waiting for Michael. I could feel the cold, hear his voice calling my name. The years fell away, and for a moment, he was there again - young, vibrant, full of love.",
+      "sensoryDetails": {
+        "visual": "Michael's face, pale in the moonlight",
+        "auditory": "His voice, clear and strong, singing my song",
+        "tactile": "The cold rain soaking through my shawl"
+      },
+      "context": {
+        "time": "Christmas Eve, late evening",
+        "place": "Aunt Julia's drawing room",
+        "situation": "Hearing 'The Lass of Aughrim'"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "longing",
+        "intensity": 0.95,
+        "valence": -0.6
+      },
+      "reliability": 0.9,
+      "narrativePosition": 3,
+      "emotionTag": "love",
+      "connectedFragments": ["gretta_2", "michael_1"]
+    },
+    {
+      "id": "gretta_2",
+      "characterId": "gretta",
+      "title": "The Confession",
+      "content": "I told Gabriel about Michael - how we met, how he loved me, how he died. The words poured out, years of silence finally broken. I did not care if it hurt him; I needed him to know. He deserved the truth, even if it shattered his world.",
+      "sensoryDetails": {
+        "visual": "Gabriel's face, pale and still",
+        "auditory": "My own voice, trembling with years of grief",
+        "tactile": "The warmth of the bed contrasting with the coldness in my heart"
+      },
+      "context": {
+        "time": "Christmas Eve, midnight",
+        "place": "Hotel room",
+        "situation": "Revealing her past to Gabriel"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "regret",
+        "intensity": 0.85,
+        "valence": -0.7
+      },
+      "reliability": 0.95,
+      "narrativePosition": 5,
+      "emotionTag": "regret",
+      "connectedFragments": ["gabriel_3", "michael_2"]
+    },
+    {
+      "id": "michael_1",
+      "characterId": "michael",
+      "title": "The Promise",
+      "content": "I waited for her in the snow, my coat thin against the winter cold. I had to see her, to tell her how much I loved her. Even as the frost bit into my bones, I could not leave. She was worth every shiver, every breath.",
+      "sensoryDetails": {
+        "visual": "The white blanket of snow covering everything",
+        "auditory": "The wind howling through the empty streets",
+        "tactile": "The freezing cold seeping into my very soul"
+      },
+      "context": {
+        "time": "Winter night, years ago",
+        "place": "Galway streets",
+        "situation": "Waiting for Gretta"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "love",
+        "intensity": 1.0,
+        "valence": 0.3
+      },
+      "reliability": 0.8,
+      "narrativePosition": 0,
+      "emotionTag": "love",
+      "connectedFragments": ["michael_2", "gretta_1"]
+    },
+    {
+      "id": "michael_2",
+      "characterId": "michael",
+      "title": "The Last Thought",
+      "content": "As the darkness closed in, I thought only of her - her smile, her laugh, the way she said my name. I did not regret what I had done. Love is not measured in years, but in moments. And in that moment, I was truly alive.",
+      "sensoryDetails": {
+        "visual": "A flash of Gretta's face in the darkness",
+        "auditory": "Her voice, distant but clear",
+        "tactile": "The gentle warmth of memory replacing the cold"
+      },
+      "context": {
+        "time": "Winter night, years ago",
+        "place": "Galway streets",
+        "situation": "Dying in the snow"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "love",
+        "intensity": 1.0,
+        "valence": 0.5
+      },
+      "reliability": 0.7,
+      "narrativePosition": 1,
+      "emotionTag": "love",
+      "connectedFragments": ["gretta_2", "gabriel_3"]
+    },
+    {
+      "id": "julia_1",
+      "characterId": "julia",
+      "title": "The Party",
+      "content": "I watched the guests dancing, their laughter filling the room. How many years had we hosted this party? Forty, perhaps more. The faces changed, but the joy remained. In these moments, the past and present merged, and for a while, time stood still.",
+      "sensoryDetails": {
+        "visual": "Couples swirling across the floor",
+        "auditory": "The piano playing a lively tune",
+        "tactile": "The warmth of the fire on my old hands"
+      },
+      "context": {
+        "time": "Christmas Eve, evening",
+        "place": "Aunt Julia's drawing room",
+        "situation": "Hosting the annual dance"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "joy",
+        "intensity": 0.7,
+        "valence": 0.6
+      },
+      "reliability": 0.9,
+      "narrativePosition": 2,
+      "emotionTag": "love",
+      "connectedFragments": ["mary_1"]
+    },
+    {
+      "id": "mary_1",
+      "characterId": "mary",
+      "title": "The Preparation",
+      "content": "The house was spotless, the food was ready, the guests would arrive soon. Julia would worry about the details, but I had everything under control. This party was more than just a gathering - it was a thread connecting us to those who had gone before.",
+      "sensoryDetails": {
+        "visual": "Tables set with fine china and crystal",
+        "auditory": "The clink of glasses being polished",
+        "tactile": "The smooth linen tablecloth beneath my fingers"
+      },
+      "context": {
+        "time": "Christmas Eve, afternoon",
+        "place": "Aunt Julia's kitchen",
+        "situation": "Preparing for the party"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "pride",
+        "intensity": 0.6,
+        "valence": 0.5
+      },
+      "reliability": 0.95,
+      "narrativePosition": 0,
+      "emotionTag": "love",
+      "connectedFragments": ["julia_1"]
+    }
+  ]
+}

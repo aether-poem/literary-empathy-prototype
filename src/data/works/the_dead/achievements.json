@@ -1,0 +1,114 @@
+{
+  "achievements": [
+    {
+      "id": "ach_first_memory",
+      "title": "First Fragment",
+      "description": "Unlock your first memory fragment",
+      "icon": "✨",
+      "unlocked": false,
+      "unlockCondition": {
+        "type": "memory",
+        "count": 1
+      }
+    },
+    {
+      "id": "ach_all_gabriel",
+      "title": "Gabriel's Journey",
+      "description": "Discover all of Gabriel's memories",
+      "icon": "🎭",
+      "unlocked": false,
+      "unlockCondition": {
+        "type": "memory",
+        "count": 6
+      }
+    },
+    {
+      "id": "ach_gretta_truth",
+      "title": "Gretta's Secret",
+      "description": "Uncover Gretta's hidden past",
+      "icon": "💔",
+      "unlocked": false,
+      "unlockCondition": {
+        "type": "memory",
+        "targetId": "gretta_2"
+      }
+    },
+    {
+      "id": "ach_michael_revealed",
+      "title": "The Ghost of Michael",
+      "description": "Learn the truth about Michael Furey",
+      "icon": "👻",
+      "unlocked": false,
+      "unlockCondition": {
+        "type": "memory",
+        "targetId": "michael_1"
+      }
+    },
+    {
+      "id": "ach_full_story",
+      "title": "Complete Narrative",
+      "description": "Complete all chapters",
+      "icon": "📖",
+      "unlocked": false,
+      "unlockCondition": {
+        "type": "chapter",
+        "count": 8
+      }
+    },
+    {
+      "id": "ach_first_interpretation",
+      "title": "First Impression",
+      "description": "Make your first interpretation",
+      "icon": "💭",
+      "unlocked": false,
+      "unlockCondition": {
+        "type": "interpretation",
+        "count": 1
+      }
+    },
+    {
+      "id": "ach_revision",
+      "title": "Evolving Understanding",
+      "description": "Revise an interpretation when new information emerges",
+      "icon": "🔄",
+      "unlocked": false,
+      "unlockCondition": {
+        "type": "interpretation",
+        "count": 2
+      }
+    },
+    {
+      "id": "ach_all_three",
+      "title": "Three Perspectives",
+      "description": "Explore all three main character perspectives",
+      "icon": "👁️",
+      "unlocked": false,
+      "unlockCondition": {
+        "type": "exploration",
+        "count": 3
+      }
+    },
+    {
+      "id": "ach_epiphany",
+      "title": "The Snow Falls",
+      "description": "Experience Gabriel's epiphany",
+      "icon": "❄️",
+      "unlocked": false,
+      "unlockCondition": {
+        "type": "memory",
+        "targetId": "gabriel_6"
+      }
+    },
+    {
+      "id": "ach_empathy_master",
+      "title": "Empathic Soul",
+      "description": "Complete the entire empathy journey",
+      "icon": "🌟",
+      "unlocked": false,
+      "unlockCondition": {
+        "type": "chapter",
+        "count": 8
+      }
+    }
+  ]
+}

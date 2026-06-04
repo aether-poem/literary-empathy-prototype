@@ -1,0 +1,112 @@
+{
+  "perspectives": [
+    {
+      "characterId": "gabriel",
+      "visibleInfo": [
+        { "characterId": "gretta", "description": "My wife, gentle and somewhat distant" },
+        { "characterId": "julia", "description": "My aunt, kind but fading" },
+        { "characterId": "mary", "description": "Practical and efficient" }
+      ],
+      "hiddenInfo": [
+        { "characterId": "gretta", "description": "She still loves Michael Furey", "revealMemoryId": "gretta_2" },
+        { "characterId": "michael", "description": "He died for love of Gretta", "revealMemoryId": "michael_1" }
+      ],
+      "biases": {
+        "gretta": "I assume her love is complete and exclusive",
+        "michael": "He was just a boy from her past",
+        "himself": "I am a good husband, providing security"
+      },
+      "innerMonologues": [
+        {
+          "id": "gabriel_mono_initial",
+          "content": "The party is in full swing, but I feel... disconnected. As if I'm watching the world through a fog.",
+          "intensity": 0.6
+        },
+        {
+          "id": "gabriel_mono_1",
+          "triggerMemoryId": "gabriel_1",
+          "content": "Why do I always feel like an outsider at these gatherings? My words feel hollow, as if I'm playing a role.",
+          "intensity": 0.7
+        },
+        {
+          "id": "gabriel_mono_2",
+          "triggerMemoryId": "gabriel_2",
+          "content": "That look on her face... I've never seen it before. What secrets does she keep from me?",
+          "intensity": 0.85
+        },
+        {
+          "id": "gabriel_mono_3",
+          "triggerMemoryId": "gabriel_3",
+          "content": "All these years, I've been living in ignorance. The dead are closer than I ever imagined.",
+          "intensity": 0.95
+        }
+      ]
+    },
+    {
+      "characterId": "gretta",
+      "visibleInfo": [
+        { "characterId": "gabriel", "description": "My husband, kind but distant" },
+        { "characterId": "julia", "description": "Warm hostess of the party" }
+      ],
+      "hiddenInfo": [
+        { "characterId": "michael", "description": "My first love, frozen in time", "revealMemoryId": "gretta_1" },
+        { "characterId": "gabriel", "description": "He will never fully understand my grief", "revealMemoryId": "gretta_2" }
+      ],
+      "biases": {
+        "gabriel": "He tries, but he cannot comprehend",
+        "michael": "His love was pure and eternal",
+        "herself": "I am unfaithful in my heart"
+      },
+      "innerMonologues": [
+        {
+          "id": "gretta_mono_initial",
+          "content": "The music is lovely, but my mind keeps wandering. There are memories I cannot escape.",
+          "intensity": 0.65
+        },
+        {
+          "id": "gretta_mono_1",
+          "triggerMemoryId": "gretta_1",
+          "content": "That song... it takes me back. I can see him standing there in the snow, so young, so brave.",
+          "intensity": 0.9
+        },
+        {
+          "id": "gretta_mono_2",
+          "triggerMemoryId": "gretta_2",
+          "content": "I have to tell him. He deserves the truth, even if it breaks us both.",
+          "intensity": 0.8
+        }
+      ]
+    },
+    {
+      "characterId": "michael",
+      "visibleInfo": [],
+      "hiddenInfo": [
+        { "characterId": "gretta", "description": "She still remembers me", "revealMemoryId": "gretta_1" },
+        { "characterId": "gabriel", "description": "He will learn the truth", "revealMemoryId": "gabriel_3" }
+      ],
+      "biases": {
+        "gretta": "She loved me completely",
+        "gabriel": "He will never know the depth of our love"
+      },
+      "innerMonologues": [
+        {
+          "id": "michael_mono_initial",
+          "content": "The snow falls softly. I remember... waiting. Always waiting.",
+          "intensity": 0.7
+        },
+        {
+          "id": "michael_mono_1",
+          "triggerMemoryId": "michael_1",
+          "content": "The cold doesn't matter. I must see her one last time. Love demands nothing less.",
+          "intensity": 1.0
+        },
+        {
+          "id": "michael_mono_2",
+          "triggerMemoryId": "michael_2",
+          "content": "I can hear her voice. She is with me now. In this moment, I am truly alive.",
+          "intensity": 1.0
+        }
+      ]
+    }
+  ]
+}

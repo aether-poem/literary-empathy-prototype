@@ -1,0 +1,84 @@
+{
+  "chapters": [
+    {
+      "id": "chapter_1",
+      "title": "The Party",
+      "description": "The annual dance at the Misses Morkan's house begins. Gabriel arrives with his wife Gretta.",
+      "position": 1,
+      "requiredMemories": [],
+      "unlocked": true,
+      "nextChapterId": "chapter_2",
+      "triggerMemoryId": "gabriel_1"
+    },
+    {
+      "id": "chapter_2",
+      "title": "The Conversation",
+      "description": "Gabriel speaks with Lily the caretaker's daughter and feels uneasy about his remark.",
+      "position": 2,
+      "requiredMemories": ["gabriel_1"],
+      "unlocked": false,
+      "nextChapterId": "chapter_3",
+      "triggerMemoryId": "gabriel_2"
+    },
+    {
+      "id": "chapter_3",
+      "title": "The Dance",
+      "description": "Gabriel dances with Miss Ivors and their conversation reveals his conflicted feelings about Ireland.",
+      "position": 3,
+      "requiredMemories": ["gabriel_2"],
+      "unlocked": false,
+      "nextChapterId": "chapter_4",
+      "triggerMemoryId": "gabriel_3"
+    },
+    {
+      "id": "chapter_4",
+      "title": "The Song",
+      "description": "Aunt Julia sings 'Arrayed for the Bridal'. The music touches Gretta deeply.",
+      "position": 4,
+      "requiredMemories": ["gretta_1"],
+      "unlocked": false,
+      "nextChapterId": "chapter_5",
+      "triggerMemoryId": "gretta_1"
+    },
+    {
+      "id": "chapter_5",
+      "title": "The Supper",
+      "description": "The guests enjoy supper. Gabriel prepares his speech for the occasion.",
+      "position": 5,
+      "requiredMemories": ["gabriel_3"],
+      "unlocked": false,
+      "nextChapterId": "chapter_6",
+      "triggerMemoryId": "gabriel_4"
+    },
+    {
+      "id": "chapter_6",
+      "title": "The Speech",
+      "description": "Gabriel delivers his speech, touching on themes of Irish hospitality and memory.",
+      "position": 6,
+      "requiredMemories": ["gabriel_4"],
+      "unlocked": false,
+      "nextChapterId": "chapter_7",
+      "triggerMemoryId": "gabriel_5"
+    },
+    {
+      "id": "chapter_7",
+      "title": "The Revelation",
+      "description": "Gretta tells Gabriel about Michael Furey, the young man who died for her love.",
+      "position": 7,
+      "requiredMemories": ["gretta_2", "michael_1"],
+      "unlocked": false,
+      "nextChapterId": "chapter_8",
+      "triggerMemoryId": "gretta_2"
+    },
+    {
+      "id": "chapter_8",
+      "title": "The Epiphany",
+      "description": "Gabriel understands the truth about love and loss as he watches the snow fall.",
+      "position": 8,
+      "requiredMemories": ["gabriel_6"],
+      "unlocked": false,
+      "nextChapterId": null,
+      "triggerMemoryId": "gabriel_6"
+    }
+  ]
+}

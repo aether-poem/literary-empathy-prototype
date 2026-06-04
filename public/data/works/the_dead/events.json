@@ -1,0 +1,164 @@
+{
+  "events": [
+    {
+      "eventId": "music_scene",
+      "title": "The Song",
+      "baseDescription": "A song is played at the party.",
+      "versions": [
+        {
+          "eventId": "music_scene",
+          "characterId": "gabriel",
+          "description": "The song fills the room. Gretta stands by the window, listening intently. She seems moved, perhaps by the beauty of the melody.",
+          "assumptions": [
+            "She is simply enjoying the music",
+            "Her distraction is momentary",
+            "She will rejoin the party soon"
+          ],
+          "emotionalState": "curious"
+        },
+        {
+          "eventId": "music_scene",
+          "characterId": "gretta",
+          "description": "The notes transport me back to Galway. I see Michael standing in the snow, his breath forming clouds in the cold air. The years dissolve away.",
+          "assumptions": [
+            "Michael is still with me in spirit",
+            "This song belongs to us",
+            "I can never forget him"
+          ],
+          "emotionalState": "nostalgic"
+        },
+        {
+          "eventId": "music_scene",
+          "characterId": "michael",
+          "description": "The song echoes through the years. I am standing in the snow again, waiting for her. My love for her is eternal, unchanging.",
+          "assumptions": [
+            "My love transcends death",
+            "She remembers me always",
+            "Our bond is unbreakable"
+          ],
+          "emotionalState": "loving"
+        }
+      ]
+    },
+    {
+      "eventId": "speech_moment",
+      "title": "The Toast",
+      "baseDescription": "Gabriel gives a speech at the party.",
+      "versions": [
+        {
+          "eventId": "speech_moment",
+          "characterId": "gabriel",
+          "description": "I stand before the guests, my words flowing smoothly. They listen attentively. I feel like I belong, like I am part of something greater than myself.",
+          "assumptions": [
+            "They respect me",
+            "My words have weight",
+            "I am a worthy member of this family"
+          ],
+          "emotionalState": "confident"
+        },
+        {
+          "eventId": "speech_moment",
+          "characterId": "gretta",
+          "description": "Gabriel speaks eloquently, but my mind wanders. The words blur together. I can only think of Michael, of that winter night so long ago.",
+          "assumptions": [
+            "Gabriel's words are meaningless",
+            "He doesn't understand me",
+            "I am trapped in a life that isn't mine"
+          ],
+          "emotionalState": "detached"
+        },
+        {
+          "eventId": "speech_moment",
+          "characterId": "michael",
+          "description": "He speaks of love and family, but I know the truth. Gretta's heart belongs to me, not to him. My love is the only real thing.",
+          "assumptions": [
+            "Gabriel is a pretender",
+            "Gretta still loves me",
+            "True love cannot be replaced"
+          ],
+          "emotionalState": "judging"
+        }
+      ]
+    },
+    {
+      "eventId": "confession_night",
+      "title": "The Confession",
+      "baseDescription": "Gretta reveals her secret to Gabriel.",
+      "versions": [
+        {
+          "eventId": "confession_night",
+          "characterId": "gabriel",
+          "description": "Gretta tells me of Michael Furey, of their love, of his death. I feel hollow, as if the ground has opened beneath me. My world shatters.",
+          "assumptions": [
+            "I have been living a lie",
+            "She never really loved me",
+            "I am a fool"
+          ],
+          "emotionalState": "devastated"
+        },
+        {
+          "eventId": "confession_night",
+          "characterId": "gretta",
+          "description": "I tell Gabriel everything. The weight lifts from my chest, but I know I have hurt him. Yet it had to be said - the truth sets me free, even if it destroys us.",
+          "assumptions": [
+            "Gabriel deserves the truth",
+            "I have been unfaithful in my heart",
+            "Michael's memory must be honored"
+          ],
+          "emotionalState": "relieved"
+        },
+        {
+          "eventId": "confession_night",
+          "characterId": "michael",
+          "description": "She remembers me. After all these years, she still remembers. My love was not in vain. I am with her now, in her heart and in her words.",
+          "assumptions": [
+            "My love endured",
+            "She never forgot",
+            "I am still alive in her"
+          ],
+          "emotionalState": "peaceful"
+        }
+      ]
+    },
+    {
+      "eventId": "snow_realization",
+      "title": "The Epiphany",
+      "baseDescription": "Gabriel watches the snow fall.",
+      "versions": [
+        {
+          "eventId": "snow_realization",
+          "characterId": "gabriel",
+          "description": "The snow falls silently, covering everything. I understand now. The dead are not gone - they live on in the memories of those who loved them. I have been blind, but now I see.",
+          "assumptions": [
+            "Life is fragile",
+            "Love transcends death",
+            "I must change"
+          ],
+          "emotionalState": "enlightened"
+        },
+        {
+          "eventId": "snow_realization",
+          "characterId": "gretta",
+          "description": "The snow reminds me of that night in Galway. Michael standing there, so brave, so foolishly in love. I close my eyes and let the memories wash over me.",
+          "assumptions": [
+            "Michael is with me",
+            "The past is never truly gone",
+            "Love endures beyond death"
+          ],
+          "emotionalState": "serene"
+        },
+        {
+          "eventId": "snow_realization",
+          "characterId": "michael",
+          "description": "The snow falls as it did that night. I am not gone. I am here, in the snow, in her memory, in the quiet moments between heartbeats.",
+          "assumptions": [
+            "Death is not an end",
+            "Love is eternal",
+            "I am still present"
+          ],
+          "emotionalState": "eternal"
+        }
+      ]
+    }
+  ]
+}

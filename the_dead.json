@@ -1,0 +1,901 @@
+{
+  "startNodeId": "n1",
+  "meta": {
+    "title": "The Dead",
+    "author": "James Joyce",
+    "description": "改编自詹姆斯·乔伊斯的经典短篇小说，体验Gabriel在圣诞舞会上的内心旅程",
+    "theme": "tide",
+    "ambient": "wind",
+    "variableName": "潮位",
+    "variableDesc": "你的情感与认知的涨落"
+  },
+  "nodes": [
+    {
+      "id": "n1",
+      "chapterTitle": "第一章：雪夜舞会",
+      "scene": "Morkan家的门厅",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "雪落在都柏林的屋顶上。你站在Morkan家的门口，大衣上落着一层白霜。今晚是一年一度的圣诞舞会，你作为Gabriel Conroy，被邀请来主持晚宴。"
+        },
+        {
+          "type": "narrative",
+          "content": "门厅里，管家的女儿Lily正忙着帮客人脱外套。她比去年长高了些，脸色依然苍白，干草色的头发在煤气灯下显得有些干枯。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Lily",
+          "content": "晚上好，Conroy先生。Kate小姐和Julia小姐一直在等您呢。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"晚上好，Lily。今年还在上学吗？\"",
+          "next": "n2a"
+        },
+        {
+          "text": "直接走向楼梯",
+          "next": "n2b"
+        }
+      ],
+      "progress": 5
+    },
+    {
+      "id": "n2a",
+      "scene": "门厅",
+      "segments": [
+        {
+          "type": "dialogue",
+          "speaker": "Lily",
+          "content": "不，先生，我今年已经不上学了。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "你",
+          "content": "\"那么，我猜我们很快就要参加你的婚礼了？\""
+        },
+        {
+          "type": "narrative",
+          "content": "Lily转过身去，肩膀微微绷紧。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Lily",
+          "content": "现在的男人啊，只会花言巧语，只想从你身上得到好处。"
+        },
+        {
+          "type": "narrative",
+          "content": "你感到一阵尴尬，脸颊发热。这个年轻女孩的苦涩让你措手不及。你从口袋里掏出一枚硬币，想缓解这份尴尬。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"圣诞节了，拿着吧。\"",
+          "next": "n3"
+        },
+        {
+          "text": "什么也没说，转身离开",
+          "next": "n3"
+        }
+      ],
+      "changes": {
+        "潮位": -5
+      },
+      "progress": 8
+    },
+    {
+      "id": "n2b",
+      "scene": "楼梯",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "你避开了与Lily的对话，直接走向楼梯。楼上飘来钢琴声和欢笑声，那是舞会的喧闹。"
+        },
+        {
+          "type": "narrative",
+          "content": "你整理了一下领带，想着今晚的演讲。你准备引用布朗宁的诗句，但又担心听众无法理解。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "继续上楼",
+          "next": "n3"
+        }
+      ],
+      "progress": 8
+    },
+    {
+      "id": "n3",
+      "scene": "客厅",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "客厅里灯火辉煌。Aunt Kate和Aunt Julia正忙着招待客人，她们灰白的头发在灯光下闪着银光。你的妻子Gretta站在角落里，穿着深蓝色的裙子，显得格外优雅。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Aunt Kate",
+          "content": "Gabriel！你可算来了。快过来，Gretta一直在等你。"
+        },
+        {
+          "type": "narrative",
+          "content": "Gretta走过来，轻轻吻了你的脸颊。她的嘴唇有些冰凉，带着雪花的气息。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "亲爱的，今晚的雪真美。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"是啊，很美。你今晚看起来真迷人。\"",
+          "next": "n4"
+        },
+        {
+          "text": "\"当心别着凉了。要不要穿上我的外套？\"",
+          "next": "n4"
+        }
+      ],
+      "progress": 12
+    },
+    {
+      "id": "n4",
+      "scene": "客厅",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "舞会正式开始了。钢琴声响起，人们开始跳舞。你注意到角落里站着一位年轻女子，她的衣领上别着一枚爱尔兰徽章。"
+        },
+        {
+          "type": "narrative",
+          "content": "她径直朝你走来，眼神锐利而直接。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miss Ivors",
+          "content": "Conroy先生，我有话要跟你说。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"请说，Ivors小姐。\"",
+          "next": "n5a"
+        },
+        {
+          "text": "找借口离开",
+          "next": "n5b"
+        }
+      ],
+      "progress": 15
+    },
+    {
+      "id": "n5a",
+      "scene": "客厅角落",
+      "segments": [
+        {
+          "type": "dialogue",
+          "speaker": "Miss Ivors",
+          "content": "我发现你在《每日快报》写专栏。身为一个爱尔兰人，你不觉得为那样的报纸写稿很丢脸吗？"
+        },
+        {
+          "type": "narrative",
+          "content": "你感到一阵不安。Miss Ivors是著名的民族主义者，她眼中的你，可能只是个沉迷于欧洲文化的\"西不列颠人\"。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "你",
+          "content": "\"文学应该超越政治。\""
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miss Ivors",
+          "content": "超越政治？在这个国家？你根本不了解自己的人民和土地。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"我只是喜欢法国和比利时的文化。\"",
+          "next": "n6a"
+        },
+        {
+          "text": "\"你说得对，我确实对自己的国家了解太少。\"",
+          "next": "n6b"
+        }
+      ],
+      "progress": 20
+    },
+    {
+      "id": "n5b",
+      "scene": "客厅",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "你假装看到远处有人在叫你，匆匆离开。但你能感觉到Miss Ivors的目光在背后盯着你，像一把冰冷的匕首。"
+        },
+        {
+          "type": "narrative",
+          "content": "你走到窗边，望着外面飘落的雪花。街灯在雪雾中显得朦胧。你感到一种莫名的疏离感。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "回到舞池",
+          "next": "n7"
+        },
+        {
+          "text": "去找Gretta",
+          "next": "n7"
+        }
+      ],
+      "changes": {
+        "潮位": -3
+      },
+      "progress": 20
+    },
+    {
+      "id": "n6a",
+      "scene": "客厅角落",
+      "segments": [
+        {
+          "type": "dialogue",
+          "speaker": "Miss Ivors",
+          "content": "法国和比利时？为什么不去看看你自己的国家？爱尔兰西部的阿伦群岛多美啊。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "你",
+          "content": "\"我...我对那些地方不感兴趣。\""
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miss Ivors",
+          "content": "不感兴趣？那是你的根！你宁愿去陌生的大陆，也不愿了解自己的家乡？"
+        },
+        {
+          "type": "narrative",
+          "content": "周围的人开始侧目。你感到脸颊发烫，脱口而出："
+        },
+        {
+          "text": "\"说实话，我厌倦了自己的国家！\"",
+          "next": "n7"
+        }
+      ],
+      "changes": {
+        "潮位": -10
+      },
+      "progress": 22
+    },
+    {
+      "id": "n6b",
+      "scene": "客厅角落",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "Miss Ivors的表情缓和了一些，但她的眼神依然锐利。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miss Ivors",
+          "content": "那么，今年夏天来阿伦群岛吧。我们有一群人要去那里待一个月。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "你",
+          "content": "\"我...我已经计划好和朋友们去欧洲骑车旅行了。\""
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miss Ivors",
+          "content": "欧洲...总是欧洲。"
+        },
+        {
+          "type": "narrative",
+          "content": "她意味深长地看了你一眼，转身离开。你听到她低声说：\"西不列颠人。\""
+        }
+      ],
+      "choices": [
+        {
+          "text": "让她离开",
+          "next": "n7"
+        },
+        {
+          "text": "\"等等，也许我可以考虑一下。\"",
+          "next": "n6c"
+        }
+      ],
+      "progress": 22
+    },
+    {
+      "id": "n6c",
+      "scene": "客厅角落",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "Miss Ivors停下脚步，回头看着你。她的眼中闪过一丝惊讶。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Miss Ivors",
+          "content": "真的吗？那太好了。Gretta也一起来吧，她是康诺特人，应该会喜欢那里的。"
+        },
+        {
+          "type": "narrative",
+          "content": "你点点头。虽然你并不确定自己是否真的会去，但在这一刻，你想弥补刚才的冷淡。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "回到舞会",
+          "next": "n7"
+        }
+      ],
+      "changes": {
+        "潮位": 5
+      },
+      "progress": 24
+    },
+    {
+      "id": "n7",
+      "scene": "客厅",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "Gretta走过来找你，她的脸上带着温柔的微笑。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "Aunt Kate让我告诉你，晚宴准备好了，需要你去切鹅。"
+        },
+        {
+          "type": "narrative",
+          "content": "你点点头，跟着她走向餐厅。路过钢琴时，你看到Aunt Julia正准备唱歌。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "对了，刚才Miss Ivors跟我说了些奇怪的话...你们吵架了吗？"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"没什么，只是观念不同。\"",
+          "next": "n8"
+        },
+        {
+          "text": "\"她觉得我不够爱国。\"",
+          "next": "n8"
+        }
+      ],
+      "progress": 28
+    },
+    {
+      "id": "n8",
+      "scene": "餐厅",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "晚宴热闹非凡。长桌上摆满了食物：烤鹅、火腿、果冻、布丁。人们举杯祝酒，笑声不断。"
+        },
+        {
+          "type": "narrative",
+          "content": "你坐在主位，熟练地切着鹅肉。这是每年的惯例，你早已驾轻就熟。"
+        },
+        {
+          "type": "narrative",
+          "content": "席间，话题从歌剧谈到修道院，又谈到了早已逝去的歌手们。Aunt Kate兴致勃勃地讲述着Parkinson的故事。"
+        },
+        {
+          "type": "narrative",
+          "content": "你心不在焉地听着，思绪飘向窗外的雪。今晚的演讲该如何开始？"
+        }
+      ],
+      "choices": [
+        {
+          "text": "专注于眼前的宴会",
+          "next": "n9"
+        },
+        {
+          "text": "观察Gretta的表情",
+          "next": "n9b"
+        }
+      ],
+      "progress": 35
+    },
+    {
+      "id": "n9",
+      "scene": "餐厅",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "晚宴接近尾声。Aunt Kate敲了敲玻璃杯，示意安静。所有人的目光都转向你——演讲时间到了。"
+        },
+        {
+          "type": "narrative",
+          "content": "你站起身，感到手心微微出汗。你清了清嗓子，开始了演讲。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "你",
+          "content": "\"女士们，先生们...今晚，我们齐聚在这座好客的屋顶下...\""
+        },
+        {
+          "type": "narrative",
+          "content": "你谈到了爱尔兰的好客传统，谈到了Aunt Kate和Aunt Julia的慷慨。你的目光扫过全场，却没有看到Miss Ivors——她已经离开了。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "继续演讲",
+          "next": "n10"
+        }
+      ],
+      "progress": 40
+    },
+    {
+      "id": "n9b",
+      "scene": "餐厅",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "你注意到Gretta有些心不在焉。她的目光似乎飘向了窗外，眼神中带着一种你从未见过的遥远神情。"
+        },
+        {
+          "type": "narrative",
+          "content": "你轻声问她怎么了，但她只是摇摇头，勉强笑了笑。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "没什么...只是想起了一些事情。"
+        },
+        {
+          "type": "narrative",
+          "content": "这时，Aunt Kate敲了敲玻璃杯——演讲时间到了。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "先安慰Gretta",
+          "next": "n9c"
+        },
+        {
+          "text": "先进行演讲",
+          "next": "n10"
+        }
+      ],
+      "progress": 40
+    },
+    {
+      "id": "n9c",
+      "scene": "餐厅",
+      "segments": [
+        {
+          "type": "dialogue",
+          "speaker": "你",
+          "content": "\"Gretta，你看起来很疲惫。是不是不舒服？\""
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "\"不，我很好。真的。\""
+        },
+        {
+          "type": "narrative",
+          "content": "她的眼神依然有些恍惚。你握住她的手，她的手指冰凉。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "你",
+          "content": "\"等演讲结束，我们就回家。\""
+        }
+      ],
+      "choices": [
+        {
+          "text": "站起身开始演讲",
+          "next": "n10"
+        }
+      ],
+      "changes": {
+        "潮位": 3
+      },
+      "progress": 42
+    },
+    {
+      "id": "n10",
+      "scene": "餐厅",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "你的演讲很成功。宾客们报以热烈的掌声。当你坐下时，Aunt Julia开始演唱《Arrayed for the Bridal》。她的声音依然清澈有力，仿佛时光从未流逝。"
+        },
+        {
+          "type": "narrative",
+          "content": "歌声结束后，宴会渐渐散去。你和Gretta准备离开。走到门口时，Aunt Kate塞给你一瓶雪利酒作为礼物。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "向Aunt们道别",
+          "next": "n11"
+        }
+      ],
+      "progress": 48
+    },
+    {
+      "id": "n11",
+      "scene": "Gresham酒店房间",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "你们在Gresham酒店订了房间。窗外的雪还在下，一片静谧。Gretta坐在床边，似乎依然心事重重。"
+        },
+        {
+          "type": "narrative",
+          "content": "你倒了两杯雪利酒，递给她一杯。她接过酒杯，但没有喝。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "你",
+          "content": "\"今晚过得怎么样？\""
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "\"很好...只是...\""
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"只是什么？\"",
+          "next": "n12"
+        },
+        {
+          "text": "默默陪在她身边",
+          "next": "n12"
+        }
+      ],
+      "progress": 52
+    },
+    {
+      "id": "n12",
+      "scene": "酒店房间",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "Gretta放下酒杯，走到窗前。雪花在街灯下飞舞，像无数白色的精灵。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "\"你还记得今晚在宴会上提到的那个歌手吗？Michael Furey...\""
+        },
+        {
+          "type": "narrative",
+          "content": "你摇摇头。这个名字对你毫无意义。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "\"他是我年轻时认识的一个男孩...在戈尔韦。他会唱歌...唱《奥格里姆的少女》。\""
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"告诉我更多。\"",
+          "next": "n13"
+        },
+        {
+          "text": "\"他现在在哪里？\"",
+          "next": "n13"
+        }
+      ],
+      "progress": 56
+    },
+    {
+      "id": "n13",
+      "scene": "酒店房间",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "Gretta转过身，眼中闪着泪光。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "\"他死了...为了我而死。那年冬天，我要离开戈尔韦去修道院。他冒雪跑了好几英里来见我，结果得了肺炎...\""
+        },
+        {
+          "type": "narrative",
+          "content": "你的心猛地一沉。这是你从未知晓的故事，一个埋藏在Gretta心中多年的秘密。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "\"今晚听到那首歌...我又想起了他。他是那么年轻，那么纯真...\""
+        }
+      ],
+      "choices": [
+        {
+          "text": "拥抱她",
+          "next": "n14a"
+        },
+        {
+          "text": "\"你从未告诉过我。\"",
+          "next": "n14b"
+        }
+      ],
+      "progress": 62
+    },
+    {
+      "id": "n14a",
+      "scene": "酒店房间",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "你走过去，轻轻将Gretta拥入怀中。她靠在你的肩上，无声地哭泣。"
+        },
+        {
+          "type": "narrative",
+          "content": "窗外的雪依然在下。你感到一种前所未有的脆弱和温柔。这个女人，你娶了多年的妻子，原来心中藏着这样一个故事。"
+        },
+        {
+          "type": "narrative",
+          "content": "你抚摸着她的头发，没有说话。在这一刻，任何言语都显得苍白无力。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "继续抱着她",
+          "next": "n15"
+        }
+      ],
+      "changes": {
+        "潮位": 10
+      },
+      "progress": 68
+    },
+    {
+      "id": "n14b",
+      "scene": "酒店房间",
+      "segments": [
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "\"我从未找到合适的时机...他已经成为了过去...但今晚，那首歌唤醒了一切。\""
+        },
+        {
+          "type": "narrative",
+          "content": "你站在原地，感到一阵莫名的失落。你以为自己了解Gretta，却发现她的内心深处藏着一个你从未触及的世界。"
+        },
+        {
+          "type": "narrative",
+          "content": "Michael Furey，那个为爱情而死的年轻男孩。在某种意义上，他永远活在Gretta的心中，而你，只是她生活中的另一个男人。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"我明白了。\"",
+          "next": "n15"
+        }
+      ],
+      "changes": {
+        "潮位": -5
+      },
+      "progress": 68
+    },
+    {
+      "id": "n15",
+      "scene": "酒店房间",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "Gretta渐渐平静下来，她擦干眼泪，对你笑了笑。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Gretta",
+          "content": "\"谢谢你听我说这些。现在我感觉好多了。\""
+        },
+        {
+          "type": "narrative",
+          "content": "她走到床边，躺了下来，很快就睡着了。她的脸上带着一丝安详，仿佛那个年轻男孩的灵魂终于得到了安息。"
+        },
+        {
+          "type": "narrative",
+          "content": "你独自站在窗前，望着窗外的雪景。整个城市都被白雪覆盖，一片寂静。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "站在窗前沉思",
+          "next": "n16"
+        },
+        {
+          "text": "也躺下休息",
+          "next": "n16b"
+        }
+      ],
+      "progress": 72
+    },
+    {
+      "id": "n16",
+      "scene": "酒店房间",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "你望着窗外，思绪万千。Michael Furey，那个为爱情献出生命的年轻人。他的死，让他永远活在了Gretta的记忆中，永远年轻，永远纯洁。"
+        },
+        {
+          "type": "narrative",
+          "content": "而你呢？你一直在追求什么？欧洲的文化？空洞的演讲？你曾经以为自己了解生活，了解爱情，但此刻你感到前所未有的迷茫。"
+        },
+        {
+          "type": "narrative",
+          "content": "雪还在下，落在这座沉睡的城市上。你想起了那些死去的人，他们似乎比活着的人更加真实，更加有生命力。"
+        },
+        {
+          "type": "narrative",
+          "content": "也许，真正的生活，真正的激情，都在那些被遗忘的故事中。而你，只是一个在雪夜中徘徊的幽灵，在生者与死者之间寻找着自己的位置。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "面对窗外的雪",
+          "next": "n17"
+        }
+      ],
+      "progress": 80
+    },
+    {
+      "id": "n16b",
+      "scene": "酒店房间",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "你轻轻躺下，尽量不吵醒Gretta。她睡得很安稳，呼吸均匀。"
+        },
+        {
+          "type": "narrative",
+          "content": "你闭上眼睛，但思绪却无法平静。Michael Furey的影子一直在你的脑海中盘旋。那个年轻的生命，为了爱情燃烧殆尽。"
+        },
+        {
+          "type": "narrative",
+          "content": "你想起了自己的生活：安稳、舒适，却似乎缺少了什么。也许是那种不顾一切的激情，那种愿意为某个人、某件事献出一切的勇气。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "思考这一切的意义",
+          "next": "n17"
+        }
+      ],
+      "progress": 80
+    },
+    {
+      "id": "n17",
+      "scene": "酒店房间",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "黎明将至，窗外的雪变成了银白色。你感到一种奇异的平静。"
+        },
+        {
+          "type": "narrative",
+          "content": "Michael Furey死了，但他的爱永存。而活着的人，在日复一日的生活中渐渐失去了激情，变成了行尸走肉。"
+        },
+        {
+          "type": "narrative",
+          "content": "你想起了Miss Ivors的话：\"你宁愿去陌生的大陆，也不愿了解自己的家乡？\"也许她是对的。你一直在逃避，逃避自己的根，逃避真实的情感。"
+        },
+        {
+          "type": "narrative",
+          "content": "雪还在下，覆盖着这座城市，覆盖着生者和死者。在这片白茫茫的世界中，一切都显得那么渺小，那么微不足道。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "接受这一切",
+          "next": "e1"
+        },
+        {
+          "text": "决定改变",
+          "next": "e2"
+        }
+      ],
+      "progress": 90
+    },
+    {
+      "id": "e1",
+      "chapterTitle": "结局：雪落无声",
+      "scene": "酒店房间",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "你站在窗前，望着窗外的雪景。城市在雪中沉睡，仿佛一切都被冻结在了时间里。"
+        },
+        {
+          "type": "narrative",
+          "content": "你明白了，生命中有些东西是无法挽回的。Michael Furey的爱情，Gretta的青春，都已经永远逝去。而你，只能在这片寂静中，接受现实的重量。"
+        },
+        {
+          "type": "narrative",
+          "content": "雪还在下，无声地覆盖着一切。你感到自己的灵魂仿佛也随着雪花飘落，沉入这片永恒的白色之中。"
+        }
+      ],
+      "ending": true,
+      "endingType": "NORMAL",
+      "endingTitle": "雪落无声",
+      "judgment": "生者沉睡，死者永生。你在雪夜中找到了属于自己的宁静，也接受了生命中不可避免的缺席。",
+      "changes": {
+        "潮位": 0
+      },
+      "progress": 100
+    },
+    {
+      "id": "e2",
+      "chapterTitle": "结局：觉醒",
+      "scene": "酒店房间",
+      "segments": [
+        {
+          "type": "narrative",
+          "content": "你转身看向Gretta，她依然在睡梦中。阳光透过窗帘的缝隙照在她的脸上，温柔而安详。"
+        },
+        {
+          "type": "narrative",
+          "content": "Michael Furey的故事像一面镜子，映照出你生活的空洞。你决定不再逃避，不再沉溺于表面的浮华。"
+        },
+        {
+          "type": "narrative",
+          "content": "这个春天，你要带Gretta回到戈尔韦，回到那个故事开始的地方。你要真正地了解她，了解自己的国家，了解什么才是真正重要的东西。"
+        },
+        {
+          "type": "narrative",
+          "content": "雪还在下，但你知道，春天终将到来。"
+        }
+      ],
+      "ending": true,
+      "endingType": "TRUE",
+      "endingTitle": "觉醒",
+      "judgment": "死者的故事唤醒了生者的灵魂。你终于明白，真正的生活不在远方，而在当下，在那些被遗忘的记忆中，在那些未曾说出口的爱里。",
+      "changes": {
+        "潮位": 20
+      },
+      "progress": 100
+    }
+  ],
+  "achievements": [
+    {
+      "id": "a1",
+      "title": "尴尬的对话",
+      "description": "在门厅与Lily的对话中感受到了年轻人的苦涩",
+      "trigger": "n2a"
+    },
+    {
+      "id": "a2",
+      "title": "西不列颠人",
+      "description": "与Miss Ivors发生了关于爱尔兰身份的争论",
+      "trigger": "n6a"
+    },
+    {
+      "id": "a3",
+      "title": "倾听者",
+      "description": "耐心倾听了Gretta的秘密",
+      "trigger": "n13"
+    },
+    {
+      "id": "a4",
+      "title": "雪夜顿悟",
+      "description": "在雪夜中获得了人生的启示",
+      "trigger": "n17"
+    },
+    {
+      "id": "a5",
+      "title": "觉醒",
+      "description": "选择面对真实的生活",
+      "trigger": "e2"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "endings": [
+    {
+      "id": "ending_truth",
+      "title": "The Truth Unveiled",
+      "description": "You have discovered the profound truth about love and loss that lies at the heart of this story.",
+      "epilogue": "As the snow falls gently upon Dublin, you understand now. Love is not merely possession or comfort. It is the memory of a boy standing in the rain, waiting for a girl who would never come. It is the quiet grief of a woman who carries a ghost in her heart. And it is the awakening of a man who finally sees beyond his own vanity to the fragile beauty of human connection. The dead are not gone. They live on in the memories of those who loved them.",
+      "requiredAchievements": ["ach_gretta_truth", "ach_michael_revealed", "ach_epiphany"],
+      "type": "truth"
+    },
+    {
+      "id": "ending_misunderstanding",
+      "title": "The Mask Remains",
+      "description": "You have seen the story through Gabriel's eyes, but the deeper truth remains hidden.",
+      "epilogue": "Gabriel returns home, his speech praised, his social standing secure. Yet something lingers -- a doubt, a shadow of understanding he cannot quite grasp. Gretta's tears are dismissed as mere sentimentality. The ghost of Michael Furey remains unseen, a secret kept by snow and silence. Some truths are too fragile to bear, and some hearts are not ready to be opened.",
+      "requiredAchievements": ["ach_first_memory", "ach_all_gabriel"],
+      "type": "misunderstanding"
+    },
+    {
+      "id": "ending_redemption",
+      "title": "Awakening",
+      "description": "Through your journey, Gabriel has found redemption in understanding.",
+      "epilogue": "In that moment of epiphany, Gabriel Conroy is reborn. The man who once cared only for his own comfort and reputation now sees the world anew. He understands Gretta's pain, Michael's sacrifice, and the quiet tragedy of lives lived half-awake. The snow falls upon all the living and the dead, and in its purity, he finds forgiveness -- for himself, for Gretta, for the ghost that walks beside them.",
+      "requiredAchievements": ["ach_epiphany", "ach_revision", "ach_correct_interpretation"],
+      "type": "redemption"
+    },
+    {
+      "id": "ending_acceptance",
+      "title": "The Quiet Acceptance",
+      "description": "You have learned to accept the complexity of human emotions without judgment.",
+      "epilogue": "The party fades, the guests depart, and the snow continues to fall. You have journeyed through the minds of Gabriel, Gretta, and Michael, and in doing so, you have learned that love is not simple. It is messy, it is painful, it is beautiful. There are no villains here, only people -- flawed, fragile, human. And in that understanding, you find peace. The dead rest. The living carry on. And the snow covers all, equal and silent.",
+      "requiredAchievements": ["ach_all_three", "ach_full_story", "ach_empathy_master"],
+      "type": "acceptance"
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "fragments": [
+    {
+      "id": "mary_1",
+      "characterId": "mary",
+      "title": "The Preparation",
+      "content": "The house was spotless, the food was ready, the guests would arrive soon. Julia would worry about the details, but I had everything under control. This party was more than just a gathering - it was a thread connecting us to those who had gone before.",
+      "sensoryDetails": {
+        "visual": "Tables set with fine china and crystal",
+        "auditory": "The clink of glasses being polished",
+        "tactile": "The smooth linen tablecloth beneath my fingers"
+      },
+      "context": {
+        "time": "Christmas Eve, afternoon",
+        "place": "Morkan house",
+        "situation": "Preparing for the party"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "pride",
+        "intensity": 0.6,
+        "valence": 0.5
+      },
+      "emotionTag": "love",
+      "reliability": 0.95,
+      "unlockConditions": {
+        "type": "always"
+      },
+      "narrativePosition": 0
+    },
+    {
+      "id": "julia_1",
+      "characterId": "julia",
+      "title": "The Old Song",
+      "content": "They asked me to sing tonight, and I did. My voice was stronger than it had been in years. There is a joy in giving voice to memories, in letting the old songs live again through me. The years fall away when I sing.",
+      "sensoryDetails": {
+        "visual": "The sheet music, yellow with age",
+        "auditory": "My own voice, trembling but true",
+        "tactile": "The worn leather cover of the songbook"
+      },
+      "context": {
+        "time": "Christmas Eve, evening",
+        "place": "Morkan drawing room",
+        "situation": "Singing 'Arrayed for the Bridal'"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "joy",
+        "intensity": 0.7,
+        "valence": 0.6
+      },
+      "emotionTag": "love",
+      "reliability": 0.9,
+      "unlockConditions": {
+        "type": "always"
+      },
+      "narrativePosition": 1
+    },
+    {
+      "id": "gabriel_1",
+      "characterId": "gabriel",
+      "title": "The Hatred of the South",
+      "content": "Molly Ivors accused me of being a West Briton because I write for The Daily Express. She wanted me to visit the Aran Isles with her, to reconnect with my Irish heritage. But I couldn't - I felt nothing for Ireland, only contempt for its provinciality. My soul belonged elsewhere, to Europe, to culture, to ideas.",
+      "sensoryDetails": {
+        "visual": "Molly's freckled face, flushed with anger",
+        "auditory": "The Lancers music starting",
+        "tactile": "The dampness of my palms"
+      },
+      "context": {
+        "time": "Christmas Eve, evening",
+        "place": "Morkan drawing room",
+        "situation": "Confrontation with Miss Ivors"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "shame",
+        "intensity": 0.7,
+        "valence": -0.5
+      },
+      "emotionTag": "shame",
+      "reliability": 0.85,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "mary_1"
+      },
+      "narrativePosition": 2
+    },
+    {
+      "id": "gabriel_2",
+      "characterId": "gabriel",
+      "title": "The Speech",
+      "content": "I stood before the guests, my voice trembling slightly as I began my speech. I spoke of the past, of old friends and cherished traditions. But beneath the words, I felt a strange emptiness, as if I were performing rather than speaking from the heart. I quoted Browning - 'One feels that one is listening to a thought-tormented music' - and saw Miss Ivors nod approvingly.",
+      "sensoryDetails": {
+        "visual": "The soft glow of gas lamps on polished silver",
+        "auditory": "The murmur of voices, the rustle of silk dresses",
+        "tactile": "The coldness of the champagne flute in my hand"
+      },
+      "context": {
+        "time": "Christmas Eve, evening",
+        "place": "Morkan dining room",
+        "situation": "Delivering the annual Christmas speech"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "anxiety",
+        "intensity": 0.7,
+        "valence": -0.5
+      },
+      "emotionTag": "fear",
+      "reliability": 0.9,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "julia_1"
+      },
+      "narrativePosition": 3
+    },
+    {
+      "id": "gretta_1",
+      "characterId": "gretta",
+      "title": "The Lass of Aughrim",
+      "content": "The song drifted across the room, and suddenly I was back in Galway, standing in the rain, waiting for Michael. I could feel the cold, hear his voice calling my name. The years fell away, and for a moment, he was there again - young, vibrant, full of love. My eyes filled with tears I could not control.",
+      "sensoryDetails": {
+        "visual": "Michael's face, pale in the moonlight",
+        "auditory": "His voice, clear and strong, singing my song",
+        "tactile": "The cold rain soaking through my shawl"
+      },
+      "context": {
+        "time": "Christmas Eve, late evening",
+        "place": "Morkan drawing room",
+        "situation": "Hearing Bartell D'Arcy sing 'The Lass of Aughrim'"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "longing",
+        "intensity": 0.95,
+        "valence": -0.6
+      },
+      "emotionTag": "loss",
+      "reliability": 0.9,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "gabriel_2"
+      },
+      "narrativePosition": 4
+    },
+    {
+      "id": "gabriel_3",
+      "characterId": "gabriel",
+      "title": "Gretta's Distraction",
+      "content": "I noticed Gretta standing by the window, listening to the song. There was a look on her face I had never seen before - a look of such deep longing that it frightened me. I called her name, but she did not hear. In that moment, I realized I did not know the woman I had married.",
+      "sensoryDetails": {
+        "visual": "Gretta's silhouette against the dark window",
+        "auditory": "The faint strains of 'The Lass of Aughrim'",
+        "tactile": "The chill of realization creeping over me"
+      },
+      "context": {
+        "time": "Christmas Eve, late evening",
+        "place": "Morkan drawing room",
+        "situation": "Observing Gretta during the party"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "fear",
+        "intensity": 0.8,
+        "valence": -0.8
+      },
+      "emotionTag": "fear",
+      "reliability": 0.85,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "gretta_1"
+      },
+      "narrativePosition": 5
+    },
+    {
+      "id": "michael_1",
+      "characterId": "michael",
+      "title": "The Promise",
+      "content": "I waited for her in the snow, my coat thin against the winter cold. I had to see her, to tell her how much I loved her. Even as the frost bit into my bones, I could not leave. She was worth every shiver, every breath. I would show her what love truly meant.",
+      "sensoryDetails": {
+        "visual": "The white blanket of snow covering everything",
+        "auditory": "The wind howling through the empty streets",
+        "tactile": "The freezing cold seeping into my very soul"
+      },
+      "context": {
+        "time": "Winter night, years ago",
+        "place": "Outside Gretta's grandmother's house in Galway",
+        "situation": "Waiting for Gretta before she leaves for Dublin"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "love",
+        "intensity": 1.0,
+        "valence": 0.3
+      },
+      "emotionTag": "love",
+      "reliability": 0.8,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "gretta_1"
+      },
+      "narrativePosition": 6
+    },
+    {
+      "id": "gretta_2",
+      "characterId": "gretta",
+      "title": "The Rainy Night",
+      "content": "I heard gravel against my window and ran downstairs. There he was, standing in the rain, so pale, so thin. I begged him to go home, but he wouldn't listen. He said he didn't want to live without me. I should have been kinder. I should have told him I loved him, even though I was leaving.",
+      "sensoryDetails": {
+        "visual": "His dark eyes, gleaming with unshed tears",
+        "auditory": "The rain drumming on the roof",
+        "tactile": "His cold, wet hands in mine"
+      },
+      "context": {
+        "time": "The night before leaving Galway",
+        "place": "Grandmother's garden in Nuns' Island",
+        "situation": "Last meeting with Michael"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "regret",
+        "intensity": 0.9,
+        "valence": -0.8
+      },
+      "emotionTag": "regret",
+      "reliability": 0.9,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "michael_1"
+      },
+      "narrativePosition": 7
+    },
+    {
+      "id": "gretta_3",
+      "characterId": "gretta",
+      "title": "The News",
+      "content": "A week after I arrived in Dublin, the letter came. Pneumonia, they said. He had caught his death waiting for me in the rain. I never saw him again. I never said goodbye. That song - it still breaks my heart every time I hear it.",
+      "sensoryDetails": {
+        "visual": "The black-bordered letter in my hands",
+        "auditory": "My own sobbing echoing in the empty room",
+        "tactile": "The paper, crumpled from my grip"
+      },
+      "context": {
+        "time": "One week after arriving in Dublin",
+        "place": "Convent in Dublin",
+        "situation": "Learning of Michael's death"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "loss",
+        "intensity": 1.0,
+        "valence": -1.0
+      },
+      "emotionTag": "loss",
+      "reliability": 0.95,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "gretta_2"
+      },
+      "narrativePosition": 8
+    },
+    {
+      "id": "gabriel_4",
+      "characterId": "gabriel",
+      "title": "The Journey Home",
+      "content": "In the cab, I felt so alive, so certain of my love for Gretta. I imagined running after her, catching her, whispering foolish things in her ear. But now I see it was all illusion - a romance I invented in my own mind. The truth was far different.",
+      "sensoryDetails": {
+        "visual": "The snow-covered streets outside the cab window",
+        "auditory": "The horse's hooves on the cobblestones",
+        "tactile": "The warmth of her arm against mine"
+      },
+      "context": {
+        "time": "Christmas Eve, midnight",
+        "place": "Cab on the way to the hotel",
+        "situation": "Imagining our future together"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "longing",
+        "intensity": 0.6,
+        "valence": 0.3
+      },
+      "emotionTag": "love",
+      "reliability": 0.8,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "gabriel_3"
+      },
+      "narrativePosition": 9
+    },
+    {
+      "id": "michael_2",
+      "characterId": "michael",
+      "title": "The Last Thought",
+      "content": "As the darkness closed in, I thought only of her - her smile, her laugh, the way she said my name. I did not regret what I had done. Love is not measured in years, but in moments. And in that moment, I was truly alive. She would remember me. That was enough.",
+      "sensoryDetails": {
+        "visual": "A flash of Gretta's face in the darkness",
+        "auditory": "Her voice, distant but clear",
+        "tactile": "The gentle warmth of memory replacing the cold"
+      },
+      "context": {
+        "time": "The night of his death",
+        "place": "His lodgings in Galway",
+        "situation": "Dying of pneumonia"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "love",
+        "intensity": 1.0,
+        "valence": 0.5
+      },
+      "emotionTag": "love",
+      "reliability": 0.7,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "gretta_3"
+      },
+      "narrativePosition": 10
+    },
+    {
+      "id": "gabriel_5",
+      "characterId": "gabriel",
+      "title": "The Confession",
+      "content": "She told me about Michael - how he died for her, how he waited in the rain. I wanted to be angry, but I couldn't. I had never loved like that, never been loved like that. All my talk of passion was hollow. I was a ridiculous figure, playing at love.",
+      "sensoryDetails": {
+        "visual": "Her face, wet with tears, averted from mine",
+        "auditory": "The sound of her sobs muffled against the quilt",
+        "tactile": "Her hand, cold and unresponsive in mine"
+      },
+      "context": {
+        "time": "Christmas Eve, after midnight",
+        "place": "Hotel room",
+        "situation": "Learning the truth about Michael"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "shame",
+        "intensity": 0.95,
+        "valence": -0.9
+      },
+      "emotionTag": "shame",
+      "reliability": 0.9,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "gabriel_4"
+      },
+      "narrativePosition": 11
+    },
+    {
+      "id": "gretta_4",
+      "characterId": "gretta",
+      "title": "The Truth",
+      "content": "I didn't mean to tell him, but the song had broken something open in me. All these years, Michael lived in my heart, a secret I could never share. Gabriel deserved to know, even if it hurt him. Perhaps now we could begin again, honestly.",
+      "sensoryDetails": {
+        "visual": "Gabriel's face, frozen in the lamplight",
+        "auditory": "My own voice, strange and distant",
+        "tactile": "The quilt rough against my cheek"
+      },
+      "context": {
+        "time": "Christmas Eve, after midnight",
+        "place": "Hotel room",
+        "situation": "Confessing about Michael"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "regret",
+        "intensity": 0.85,
+        "valence": -0.7
+      },
+      "emotionTag": "regret",
+      "reliability": 0.9,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "gabriel_5"
+      },
+      "narrativePosition": 12
+    },
+    {
+      "id": "gabriel_6",
+      "characterId": "gabriel",
+      "title": "The Epiphany",
+      "content": "I watched her sleep, and for the first time, I truly saw her - not as my wife, not as my possession, but as a woman with a past, with losses I could never understand. The snow was falling on all of Ireland, on the living and the dead. I was neither, only a shadow passing between worlds.",
+      "sensoryDetails": {
+        "visual": "Snowflakes falling silently in the moonlight",
+        "auditory": "Her deep, even breathing",
+        "tactile": "The cold glass against my forehead"
+      },
+      "context": {
+        "time": "Christmas morning, early",
+        "place": "Hotel room",
+        "situation": "Watching Gretta sleep, understanding at last"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "sadness",
+        "intensity": 0.9,
+        "valence": -0.5
+      },
+      "emotionTag": "loss",
+      "reliability": 0.95,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "gretta_4"
+      },
+      "narrativePosition": 13
+    },
+    {
+      "id": "gabriel_7",
+      "characterId": "gabriel",
+      "title": "Generous Tears",
+      "content": "I had never felt like that myself towards any woman, but I knew that such a feeling must be love. Michael Furey had braved death for Gretta, and she had carried that image in her heart for all these years. I could not compete with a dead man. Perhaps I never could.",
+      "sensoryDetails": {
+        "visual": "The form of Michael, standing under a dripping tree",
+        "auditory": "The snow falling faintly, like the descent of their last end",
+        "tactile": "Tears sliding down my cheeks"
+      },
+      "context": {
+        "time": "Christmas morning, dawn",
+        "place": "Hotel room",
+        "situation": "Weeping for what he never had"
+      },
+      "emotionalContent": {
+        "primaryEmotion": "sadness",
+        "intensity": 1.0,
+        "valence": -0.6
+      },
+      "emotionTag": "loss",
+      "reliability": 0.95,
+      "unlockConditions": {
+        "type": "memory_explored",
+        "memoryId": "gabriel_6"
+      },
+      "narrativePosition": 14
+    }
+  ]
+}

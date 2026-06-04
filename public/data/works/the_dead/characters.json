@@ -1,0 +1,122 @@
+{
+  "characters": [
+    {
+      "id": "gabriel",
+      "name": "Gabriel",
+      "fullName": "Gabriel Conroy",
+      "role": "Protagonist",
+      "description": "A university professor and literary critic who struggles with feelings of inadequacy and isolation beneath a veneer of confidence.",
+      "personalityTraits": ["intellectual", "anxious", "self-conscious", "loving", "melancholic"],
+      "emotionalBaseline": {
+        "mood": -0.3,
+        "temperament": "melancholic"
+      },
+      "secrets": [
+        "He fears he is not truly loved by Gretta",
+        "He feels alienated from his Irish identity",
+        "He carries guilt about his mother's death"
+      ],
+      "misconceptions": [
+        {
+          "aboutCharacterId": "gretta",
+          "misconception": "Gretta's affections are solely for him",
+          "truth": "Gretta still carries deep feelings for Michael Furey"
+        },
+        {
+          "aboutCharacterId": "michael",
+          "misconception": "Michael was just a boyhood friend",
+          "truth": "Michael was Gretta's first love who died for her"
+        }
+      ],
+      "visual": {
+        "colorScheme": "#3b82f6",
+        "symbol": "❄️"
+      }
+    },
+    {
+      "id": "gretta",
+      "name": "Gretta",
+      "fullName": "Gretta Conroy",
+      "role": "Gabriel's Wife",
+      "description": "A gentle woman from the west of Ireland who carries a secret grief from her past that shapes her present.",
+      "personalityTraits": ["gentle", "mysterious", "melancholic", "devoted", "haunted"],
+      "emotionalBaseline": {
+        "mood": -0.5,
+        "temperament": "calm"
+      },
+      "secrets": [
+        "She still loves the memory of Michael Furey",
+        "She has never told Gabriel about Michael",
+        "She feels guilty for loving another"
+      ],
+      "misconceptions": [
+        {
+          "aboutCharacterId": "gabriel",
+          "misconception": "Gabriel understands her pain",
+          "truth": "Gabriel is largely unaware of her inner life"
+        }
+      ],
+      "visual": {
+        "colorScheme": "#ec4899",
+        "symbol": "🌹"
+      }
+    },
+    {
+      "id": "michael",
+      "name": "Michael",
+      "fullName": "Michael Furey",
+      "role": "Gretta's First Love",
+      "description": "A young man from Galway who died at seventeen, frozen to death while waiting for Gretta in the snow.",
+      "personalityTraits": ["passionate", "romantic", "impulsive", "devoted"],
+      "emotionalBaseline": {
+        "mood": 0.2,
+        "temperament": "passionate"
+      },
+      "secrets": [
+        "He sacrificed his life for love",
+        "He remains vivid in Gretta's memory"
+      ],
+      "misconceptions": [],
+      "visual": {
+        "colorScheme": "#8b5cf6",
+        "symbol": "💀"
+      }
+    },
+    {
+      "id": "julia",
+      "name": "Aunt Julia",
+      "fullName": "Julia Morkan",
+      "role": "Gabriel's Aunt",
+      "description": "An elderly woman who hosts the annual Christmas dance, clinging to traditions of the past.",
+      "personalityTraits": ["warm", "nostalgic", "graceful", "dignified"],
+      "emotionalBaseline": {
+        "mood": 0.3,
+        "temperament": "calm"
+      },
+      "secrets": [],
+      "misconceptions": [],
+      "visual": {
+        "colorScheme": "#fbbf24",
+        "symbol": "🎭"
+      }
+    },
+    {
+      "id": "mary",
+      "name": "Aunt Mary",
+      "fullName": "Mary Jane Morkan",
+      "role": "Gabriel's Aunt",
+      "description": "Julia's younger sister, practical and responsible, managing the household and the party.",
+      "personalityTraits": ["practical", "efficient", "kind", "no-nonsense"],
+      "emotionalBaseline": {
+        "mood": 0.2,
+        "temperament": "calm"
+      },
+      "secrets": [],
+      "misconceptions": [],
+      "visual": {
+        "colorScheme": "#10b981",
+        "symbol": "🏠"
+      }
+    }
+  ]
+}

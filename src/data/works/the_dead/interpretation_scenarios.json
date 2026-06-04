@@ -1,0 +1,114 @@
+{
+  "scenarios": [
+    {
+      "id": "scenario_gretta_distracted",
+      "eventDescription": "Gretta stands by the window, listening to the song. There is a look of deep longing on her face.",
+      "memoryId": "gabriel_2",
+      "options": [
+        {
+          "id": "opt_a",
+          "text": "She is simply enjoying the music",
+          "characterId": "gabriel"
+        },
+        {
+          "id": "opt_b",
+          "text": "She is remembering someone from her past",
+          "characterId": "gretta"
+        },
+        {
+          "id": "opt_c",
+          "text": "She is unhappy with our marriage",
+          "characterId": "gabriel"
+        }
+      ]
+    },
+    {
+      "id": "scenario_song_effect",
+      "eventDescription": "The song 'The Lass of Aughrim' plays, and Gretta seems deeply moved.",
+      "memoryId": "gretta_1",
+      "options": [
+        {
+          "id": "opt_a",
+          "text": "The song reminds her of Michael Furey",
+          "characterId": "gretta"
+        },
+        {
+          "id": "opt_b",
+          "text": "The song is simply beautiful",
+          "characterId": "gabriel"
+        },
+        {
+          "id": "opt_c",
+          "text": "She misses her family in Galway",
+          "characterId": "gretta"
+        }
+      ]
+    },
+    {
+      "id": "scenario_michael_waiting",
+      "eventDescription": "Michael Furey waits in the snow for Gretta, even as the cold bites into him.",
+      "memoryId": "michael_1",
+      "options": [
+        {
+          "id": "opt_a",
+          "text": "He is foolish and impulsive",
+          "characterId": "gabriel"
+        },
+        {
+          "id": "opt_b",
+          "text": "His love is so strong he would die for it",
+          "characterId": "michael"
+        },
+        {
+          "id": "opt_c",
+          "text": "He is trying to prove something",
+          "characterId": "gabriel"
+        }
+      ]
+    },
+    {
+      "id": "scenario_confession",
+      "eventDescription": "Gretta tells Gabriel about Michael Furey and his death.",
+      "memoryId": "gretta_2",
+      "options": [
+        {
+          "id": "opt_a",
+          "text": "She has been unfaithful in her heart",
+          "characterId": "gabriel"
+        },
+        {
+          "id": "opt_b",
+          "text": "She needs to honor Michael's memory",
+          "characterId": "gretta"
+        },
+        {
+          "id": "opt_c",
+          "text": "She wants to hurt Gabriel",
+          "characterId": "gabriel"
+        }
+      ]
+    },
+    {
+      "id": "scenario_epiphany",
+      "eventDescription": "Gabriel watches the snow fall and understands the truth about love and death.",
+      "memoryId": "gabriel_3",
+      "options": [
+        {
+          "id": "opt_a",
+          "text": "He realizes his own emptiness",
+          "characterId": "gabriel"
+        },
+        {
+          "id": "opt_b",
+          "text": "He understands Gretta's love for Michael",
+          "characterId": "gabriel"
+        },
+        {
+          "id": "opt_c",
+          "text": "He is overwhelmed by grief",
+          "characterId": "gabriel"
+        }
+      ]
+    }
+  ]
+}

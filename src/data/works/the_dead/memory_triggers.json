@@ -1,0 +1,68 @@
+{
+  "triggers": [
+    {
+      "id": "trigger_1",
+      "type": "emotion",
+      "value": "longing",
+      "intensity": 0.7,
+      "targetMemoryIds": ["gretta_1", "michael_1"]
+    },
+    {
+      "id": "trigger_2",
+      "type": "emotion",
+      "value": "fear",
+      "intensity": 0.6,
+      "targetMemoryIds": ["gabriel_2"]
+    },
+    {
+      "id": "trigger_3",
+      "type": "memory",
+      "value": "gabriel_2",
+      "targetMemoryIds": ["gabriel_3", "gretta_1"]
+    },
+    {
+      "id": "trigger_4",
+      "type": "memory",
+      "value": "gretta_1",
+      "targetMemoryIds": ["gretta_2", "michael_1", "michael_2"]
+    },
+    {
+      "id": "trigger_5",
+      "type": "memory",
+      "value": "michael_1",
+      "targetMemoryIds": ["michael_2", "gretta_2"]
+    },
+    {
+      "id": "trigger_6",
+      "type": "character",
+      "value": "gretta",
+      "targetMemoryIds": ["gretta_1", "gretta_2", "gabriel_2"]
+    },
+    {
+      "id": "trigger_7",
+      "type": "character",
+      "value": "michael",
+      "targetMemoryIds": ["michael_1", "michael_2", "gretta_1"]
+    },
+    {
+      "id": "trigger_8",
+      "type": "emotion",
+      "value": "love",
+      "intensity": 0.8,
+      "targetMemoryIds": ["michael_1", "michael_2"]
+    },
+    {
+      "id": "trigger_9",
+      "type": "emotion",
+      "value": "sadness",
+      "intensity": 0.7,
+      "targetMemoryIds": ["gabriel_3", "gretta_2"]
+    },
+    {
+      "id": "trigger_10",
+      "type": "memory",
+      "value": "gretta_2",
+      "targetMemoryIds": ["gabriel_3", "michael_2"]
+    }
+  ]
+}

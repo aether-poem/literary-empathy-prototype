@@ -1,0 +1,13 @@
+{
+  "works": [
+    {
+      "id": "the_dead",
+      "title": "The Dead",
+      "author": "James Joyce",
+      "year": 1914,
+      "description": "A profound exploration of love, loss, and the epiphany of Gabriel Conroy",
+      "coverImage": "the_dead/cover.jpg",
+      "available": true
+    }
+  ]
+}

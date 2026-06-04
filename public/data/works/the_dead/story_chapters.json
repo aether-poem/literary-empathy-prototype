@@ -1,0 +1,84 @@
+{
+  "chapters": [
+    {
+      "id": "chapter_1",
+      "title": "The Arrival",
+      "description": "The annual dance at the Misses Morkan's house begins. Gabriel arrives with his wife Gretta. The air is thick with anticipation and the memories of past gatherings.",
+      "position": 1,
+      "requiredMemories": [],
+      "unlocked": true,
+      "nextChapterId": "chapter_2",
+      "triggerMemoryId": "mary_1"
+    },
+    {
+      "id": "chapter_2",
+      "title": "The Dance",
+      "description": "Gabriel dances with Miss Ivors and their conversation reveals his conflicted feelings about Ireland. He speaks of his love for European culture and his disconnection from his homeland.",
+      "position": 2,
+      "requiredMemories": ["mary_1"],
+      "unlocked": false,
+      "nextChapterId": "chapter_3",
+      "triggerMemoryId": "julia_1"
+    },
+    {
+      "id": "chapter_3",
+      "title": "The Song",
+      "description": "Aunt Julia sings 'Arrayed for the Bridal' with unexpected strength. But it is another song, 'The Lass of Aughrim', that will change everything.",
+      "position": 3,
+      "requiredMemories": ["julia_1", "gabriel_1"],
+      "unlocked": false,
+      "nextChapterId": "chapter_4",
+      "triggerMemoryId": "gabriel_2"
+    },
+    {
+      "id": "chapter_4",
+      "title": "The Longing",
+      "description": "Bartell D'Arcy sings 'The Lass of Aughrim'. Gretta is overcome with emotion. Gabriel watches her with growing unease.",
+      "position": 4,
+      "requiredMemories": ["gabriel_2"],
+      "unlocked": false,
+      "nextChapterId": "chapter_5",
+      "triggerMemoryId": "gretta_1"
+    },
+    {
+      "id": "chapter_5",
+      "title": "The Departure",
+      "description": "The party ends. The guests depart into the snow-covered night. Gabriel and Gretta make their way to the hotel, unaware of what awaits.",
+      "position": 5,
+      "requiredMemories": ["gretta_1", "gabriel_3", "michael_1", "gretta_2"],
+      "unlocked": false,
+      "nextChapterId": "chapter_6",
+      "triggerMemoryId": "gretta_3"
+    },
+    {
+      "id": "chapter_6",
+      "title": "The Truth",
+      "description": "In the hotel room, Gretta reveals her past. Michael Furey, a young man from Galway, had loved her deeply. He died for her, waiting in the rain.",
+      "position": 6,
+      "requiredMemories": ["gretta_3", "gabriel_4"],
+      "unlocked": false,
+      "nextChapterId": "chapter_7",
+      "triggerMemoryId": "gabriel_5"
+    },
+    {
+      "id": "chapter_7",
+      "title": "The Snow",
+      "description": "Gabriel watches the snow falling on Ireland, on the living and the dead. He understands at last the nature of love and loss.",
+      "position": 7,
+      "requiredMemories": ["gabriel_5", "gretta_4"],
+      "unlocked": false,
+      "nextChapterId": "chapter_8",
+      "triggerMemoryId": "gabriel_6"
+    },
+    {
+      "id": "chapter_8",
+      "title": "The Dead",
+      "description": "In the silence, Gabriel feels the presence of all those who have lived and died. He weeps for what he never had - and what he can never give.",
+      "position": 8,
+      "requiredMemories": ["gabriel_6", "michael_2"],
+      "unlocked": false,
+      "nextChapterId": null,
+      "triggerMemoryId": "gabriel_7"
+    }
+  ]
+}
