@@ -33,6 +33,11 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/MemoryBoard.vue')
   },
   {
+    path: '/interactive-game',
+    name: 'interactive-game',
+    component: () => import('@/views/InteractiveGame.vue')
+  },
+  {
     path: '/ending',
     name: 'ending',
     component: () => import('@/views/Ending.vue')

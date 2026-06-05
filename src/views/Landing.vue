@@ -47,11 +47,18 @@
           <div class="absolute inset-0 bg-empathy-rose/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </button>
 
-        <button 
+        <button
           @click="goToMemoryBoard"
           class="group relative px-10 py-3 bg-transparent border border-white/10 text-gray-400 rounded-full text-sm tracking-wider transition-all duration-500 hover:border-empathy-purple/50 hover:text-empathy-purple"
         >
           <span class="relative z-10">Memory Board</span>
+        </button>
+
+        <button
+          @click="goToInteractiveGame"
+          class="group relative px-10 py-3 bg-transparent border border-white/10 text-gray-400 rounded-full text-sm tracking-wider transition-all duration-500 hover:border-[#d7c08f]/50 hover:text-[#d7c08f]"
+        >
+          <span class="relative z-10">Interactive Story Game</span>
         </button>
         
         <p class="text-gray-600 text-xs tracking-wide">
@@ -118,6 +125,10 @@ function startExploration() {
 
 function goToMemoryBoard() {
   router.push('/memory-board')
+}
+
+function goToInteractiveGame() {
+  router.push('/interactive-game')
 }
 </script>
 

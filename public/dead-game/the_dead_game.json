@@ -1,0 +1,1779 @@
+{
+  "meta": {
+    "title": "The Dead",
+    "author": "James Joyce / interactive adaptation",
+    "version": "1.0.0",
+    "description": "A restrained interactive adaptation of James Joyce's The Dead, following Gabriel Conroy through a winter gathering, a song, and the snow beyond the living and the dead.",
+    "theme": "paper",
+    "ambient": "wind",
+    "cover": {
+      "label": "The Dead",
+      "tagline": "Snow was general all over Ireland."
+    },
+    "variableName": "Snowfall",
+    "initialVariable": 38
+  },
+  "startNodeId": "start",
+  "variables": {
+    "public_composure": "steady",
+    "ivors_tone": "evaded",
+    "speech_tone": "formal",
+    "gretta_distance": "near",
+    "heard_song": false
+  },
+  "achievements": {
+    "ach_true_snow": {
+      "title": "Faintly Falling",
+      "description": "You let the snow reach the living and the dead."
+    },
+    "ach_jealous": {
+      "title": "The Warm Room",
+      "description": "You kept the room warm and narrow."
+    },
+    "ach_glass": {
+      "title": "Glass Between",
+      "description": "You heard the story through a pane."
+    },
+    "ach_westward": {
+      "title": "Westward",
+      "description": "You followed the night toward the west."
+    },
+    "ach_voice": {
+      "title": "A Voice Under Rain",
+      "description": "You listened until the song had a body."
+    },
+    "ach_door": {
+      "title": "The Door Left Open",
+      "description": "You stepped out before the house could claim you."
+    },
+    "ach_laughter": {
+      "title": "Bad Form",
+      "description": "You broke the tact that held the evening together."
+    },
+    "ach_table": {
+      "title": "No Toast",
+      "description": "You left the table without its customary words."
+    },
+    "ach_corridor": {
+      "title": "The Corridor",
+      "description": "You chose the corridor over the story."
+    },
+    "ach_lily": {
+      "title": "A Bitter Reply",
+      "description": "You noticed the wound under Lily's answer."
+    },
+    "ach_ivors": {
+      "title": "West Briton",
+      "description": "You let the accusation remain in the room."
+    },
+    "ach_song": {
+      "title": "The Lass of Aughrim",
+      "description": "You asked after the song."
+    }
+  },
+  "nodes": {
+    "start": {
+      "chapterTitle": "I. The Door",
+      "title": "Usher's Island",
+      "scene": {
+        "id": "morkan_hall",
+        "name": "Morkan House Hall",
+        "type": "major",
+        "description": "The hall is bare and narrow. Above it the floorboards answer the dance with a dull stamping.",
+        "arrival": "The bell has hardly stopped shaking when Lily opens the door."
+      },
+      "progress": 3,
+      "segments": [
+        {
+          "text": "Snow lies on your shoulders and on the toes of your goloshes. Lily, the caretaker's daughter, stands back to let Gretta pass toward the stairs."
+        },
+        {
+          "speaker": "Lily",
+          "text": "Miss Kate and Miss Julia thought you were never coming."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Answer brightly and scrape the snow from your shoes.",
+          "next": "lily_pantry",
+          "changes": {
+            "val": 2
+          }
+        },
+        {
+          "text": "Keep your eyes on the stairs where Gretta has gone.",
+          "next": "lily_pantry",
+          "changes": {
+            "val": 5,
+            "set": {
+              "gretta_distance": "near"
+            }
+          }
+        },
+        {
+          "text": "Say you should never have come out in such weather.",
+          "next": "rash_door_01",
+          "changes": {
+            "importantFlag": {
+              "flag": "refused_party_role",
+              "label": "Refused the evening"
+            }
+          }
+        }
+      ]
+    },
+    "rash_door_01": {
+      "title": "A Draught",
+      "scene": {
+        "id": "morkan_door",
+        "name": "Open Doorway",
+        "type": "major",
+        "description": "The cold enters as if it had been waiting for an invitation.",
+        "arrival": "Your hand remains on the wet latch."
+      },
+      "progress": 8,
+      "segments": [
+        {
+          "text": "Lily stares at you, uncertain whether she is permitted to laugh. From upstairs one of your aunts calls down your name."
+        },
+        {
+          "text": "Gretta's voice answers them before yours can. The little ceremony of welcome goes on without you."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Step back into the snow.",
+          "next": "ending_rash_door"
+        }
+      ]
+    },
+    "lily_pantry": {
+      "title": "The Pantry",
+      "scene": {
+        "id": "pantry",
+        "name": "Little Pantry",
+        "type": "major",
+        "description": "A gas flame makes the shelves and folded coats look paler than they are.",
+        "arrival": "Lily helps the stiff overcoat from your shoulders."
+      },
+      "progress": 7,
+      "segments": [
+        {
+          "text": "The ceiling shakes with the dance. Lily folds your coat carefully, all service and hurry."
+        },
+        {
+          "text": "You remember her as a child on the lowest stair with a rag doll in her arms."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ask whether she is still at school.",
+          "next": "lily_school",
+          "changes": {
+            "val": 3,
+            "addFlag": "noticed_lily"
+          }
+        },
+        {
+          "text": "Let the servant be a servant and say nothing more.",
+          "next": "speech_notes_01",
+          "changes": {
+            "val": -4
+          }
+        }
+      ]
+    },
+    "lily_school": {
+      "title": "A Little Joke",
+      "scene": {
+        "id": "pantry",
+        "name": "Little Pantry",
+        "type": "major",
+        "description": "A gas flame makes the shelves and folded coats look paler than they are."
+      },
+      "progress": 10,
+      "segments": [
+        {
+          "speaker": "Lily",
+          "text": "I'm done schooling this year and more."
+        },
+        {
+          "text": "You hear yourself become genial, almost paternal."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Joke that her wedding will be next.",
+          "next": "lily_bitter",
+          "changes": {
+            "val": -6,
+            "set": {
+              "public_composure": "shaken"
+            }
+          }
+        },
+        {
+          "text": "Say only that Miss Kate depends upon her tonight.",
+          "next": "lily_kind",
+          "changes": {
+            "val": 5,
+            "unlockAchievement": "ach_lily"
+          }
+        }
+      ]
+    },
+    "lily_bitter": {
+      "title": "Palaver",
+      "scene": {
+        "id": "pantry",
+        "name": "Little Pantry",
+        "type": "major",
+        "description": "The room is too small for the answer that comes."
+      },
+      "progress": 12,
+      "segments": [
+        {
+          "speaker": "Lily",
+          "text": "The men that is now is only all palaver and what they can get out of you."
+        },
+        {
+          "text": "The words strike your face before you have time to arrange one of your own."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Push a coin into her hand and escape upstairs.",
+          "next": "speech_notes_01",
+          "changes": {
+            "val": -3,
+            "addFlag": "paid_lily"
+          }
+        },
+        {
+          "text": "Murmur an apology, too low for the hallway to hear.",
+          "next": "speech_notes_01",
+          "changes": {
+            "val": 8,
+            "unlockAchievement": "ach_lily"
+          }
+        }
+      ]
+    },
+    "lily_kind": {
+      "title": "Useful Words",
+      "scene": {
+        "id": "pantry",
+        "name": "Little Pantry",
+        "type": "major",
+        "description": "The dance above continues without waiting for either of you."
+      },
+      "progress": 12,
+      "segments": [
+        {
+          "speaker": "Lily",
+          "text": "They do be fussy, sir."
+        },
+        {
+          "text": "She says it without insolence. It is nearly gratitude, but not quite."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Thank her and go up.",
+          "next": "speech_notes_01",
+          "changes": {
+            "val": 4
+          }
+        }
+      ]
+    },
+    "speech_notes_01": {
+      "title": "Outside the Drawing Room",
+      "scene": {
+        "id": "drawing_room_door",
+        "name": "Drawing Room Door",
+        "type": "major",
+        "description": "Skirts sweep against the other side of the door. Men's heels clack out the measure.",
+        "arrival": "You wait until the waltz should finish."
+      },
+      "progress": 15,
+      "segments": [
+        {
+          "text": "You take the folded paper from your waistcoat pocket. Browning stands there among the headings, looking suddenly too high for the room."
+        },
+        {
+          "text": "The evening must be managed. So must your tone."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Keep the Browning line. They may rise to it.",
+          "next": "aunts_goloshes",
+          "changes": {
+            "val": -2,
+            "set": {
+              "speech_tone": "formal"
+            }
+          }
+        },
+        {
+          "text": "Resolve to speak simply for your aunts.",
+          "next": "aunts_goloshes",
+          "changes": {
+            "val": 5,
+            "set": {
+              "speech_tone": "warm"
+            }
+          }
+        },
+        {
+          "text": "Fold the paper away. You will not perform for them tonight.",
+          "next": "ending_rash_table",
+          "changes": {
+            "importantFlag": {
+              "flag": "abandoned_speech",
+              "label": "Abandoned the toast"
+            }
+          }
+        }
+      ]
+    },
+    "aunts_goloshes": {
+      "title": "Goloshes",
+      "scene": {
+        "id": "landing",
+        "name": "Landing",
+        "type": "major",
+        "description": "Kate and Julia move in small, anxious circles around Gretta and the stairs."
+      },
+      "progress": 18,
+      "segments": [
+        {
+          "speaker": "Gretta",
+          "text": "The next thing he'll buy me will be a diving suit."
+        },
+        {
+          "text": "The aunts laugh. You laugh too, but your hand goes to your tie."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Defend the word. Everyone wears them on the continent.",
+          "next": "freddy_arrives",
+          "changes": {
+            "val": -3,
+            "set": {
+              "public_composure": "brittle"
+            }
+          }
+        },
+        {
+          "text": "Let Gretta have the joke.",
+          "next": "freddy_arrives",
+          "changes": {
+            "val": 4
+          }
+        }
+      ]
+    },
+    "freddy_arrives": {
+      "title": "Freddy",
+      "scene": {
+        "id": "stairs",
+        "name": "Stairs",
+        "type": "transient",
+        "description": "The banisters carry every laugh and whisper."
+      },
+      "progress": 21,
+      "segments": [
+        {
+          "speaker": "Aunt Kate",
+          "text": "Slip down, Gabriel, like a good fellow, and see if he's all right."
+        },
+        {
+          "text": "From below comes Freddy Malins' laugh, already apologizing for itself."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Pilot him upstairs with cheerful firmness.",
+          "next": "music_memory",
+          "changes": {
+            "val": 3
+          }
+        },
+        {
+          "text": "Warn him sharply where the young ladies can hear.",
+          "next": "rash_laughter_01",
+          "changes": {
+            "importantFlag": {
+              "flag": "publicly_shamed_guest",
+              "label": "Broke the household tact"
+            }
+          }
+        }
+      ]
+    },
+    "rash_laughter_01": {
+      "title": "A Silence Too Early",
+      "scene": {
+        "id": "landing",
+        "name": "Landing",
+        "type": "major",
+        "description": "The dance has stopped, but no one has announced it."
+      },
+      "progress": 24,
+      "segments": [
+        {
+          "text": "Freddy's face remains red, yet the laugh goes out of it. Aunt Kate looks at you as if you had dropped a dish."
+        },
+        {
+          "text": "The house continues, but no longer with the same confidence."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Stand in the silence you have made.",
+          "next": "ending_rash_laughter"
+        }
+      ]
+    },
+    "music_memory": {
+      "chapterTitle": "II. The Dance",
+      "title": "Mary Jane's Piece",
+      "scene": {
+        "id": "drawing_room",
+        "name": "Drawing Room",
+        "type": "major",
+        "description": "The chandelier glitters on the polished floor; old pictures hang above the piano.",
+        "arrival": "You return to the drawing room as Mary Jane begins again."
+      },
+      "progress": 26,
+      "segments": [
+        {
+          "text": "Your eyes leave the music and settle on the wool-work picture, the dead princes, then on your mother's photograph."
+        },
+        {
+          "text": "A phrase of hers returns: country cute. It had not been true of Gretta."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Let the memory pass before it can rankle.",
+          "next": "ivors_approach",
+          "changes": {
+            "val": 4
+          }
+        },
+        {
+          "text": "Hold the old slight against your mother and the room.",
+          "next": "ivors_approach",
+          "changes": {
+            "val": -2,
+            "set": {
+              "public_composure": "shaken"
+            }
+          }
+        }
+      ]
+    },
+    "ivors_approach": {
+      "title": "A Crow to Pluck",
+      "scene": {
+        "id": "dance_floor",
+        "name": "Dance Floor",
+        "type": "major",
+        "description": "The figures of the lancers gather and part with exact little bows."
+      },
+      "progress": 30,
+      "segments": [
+        {
+          "speaker": "Miss Ivors",
+          "text": "I have a crow to pluck with you."
+        },
+        {
+          "text": "Her Irish brooch catches the light as plainly as an accusation."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Smile and ask what offence you have committed.",
+          "next": "ivors_west_briton",
+          "changes": {
+            "val": 2
+          }
+        },
+        {
+          "text": "Brace yourself before she has named it.",
+          "next": "ivors_west_briton",
+          "changes": {
+            "val": -2,
+            "set": {
+              "public_composure": "brittle"
+            }
+          }
+        }
+      ]
+    },
+    "ivors_west_briton": {
+      "title": "West Briton",
+      "scene": {
+        "id": "dance_floor",
+        "name": "Dance Floor",
+        "type": "major",
+        "description": "The other dancers are near enough to hear a word if it is sharpened."
+      },
+      "progress": 33,
+      "segments": [
+        {
+          "speaker": "Miss Ivors",
+          "text": "To say you'd write for a paper like that. I didn't think you were a West Briton."
+        },
+        {
+          "text": "The phrase enters the figure of the dance and will not leave it."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Say literature is above politics, but say it lightly.",
+          "next": "ivors_aran",
+          "changes": {
+            "val": 1,
+            "set": {
+              "ivors_tone": "evaded"
+            },
+            "unlockAchievement": "ach_ivors"
+          }
+        },
+        {
+          "text": "Tell her she has no right to make you ridiculous.",
+          "next": "ivors_aran",
+          "changes": {
+            "val": -7,
+            "addFlag": "answered_ivors_coldly",
+            "set": {
+              "ivors_tone": "argued"
+            }
+          }
+        },
+        {
+          "text": "Ask what she thinks you have betrayed.",
+          "next": "ivors_aran",
+          "changes": {
+            "val": 8,
+            "set": {
+              "ivors_tone": "listened"
+            }
+          }
+        }
+      ]
+    },
+    "ivors_aran": {
+      "title": "The West",
+      "scene": {
+        "id": "dance_floor",
+        "name": "Dance Floor",
+        "type": "major",
+        "description": "Hands meet and part; the question remains when the figure changes."
+      },
+      "progress": 36,
+      "segments": [
+        {
+          "speaker": "Miss Ivors",
+          "text": "Will you come for an excursion to the Aran Isles this summer?"
+        },
+        {
+          "text": "She says it would be splendid for Gretta too. Connacht is brought into the room as if it had been waiting outside."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Say you have arranged for France or Belgium.",
+          "next": "ivors_retort",
+          "changes": {
+            "val": -3
+          }
+        },
+        {
+          "text": "Admit that Gretta might like to see Galway again.",
+          "next": "ivors_softened",
+          "changes": {
+            "val": 8,
+            "addFlag": "accepted_west"
+          }
+        }
+      ]
+    },
+    "ivors_retort": {
+      "title": "Sick of It",
+      "scene": {
+        "id": "dance_floor",
+        "name": "Dance Floor",
+        "type": "major",
+        "description": "Neighbours have begun to listen."
+      },
+      "progress": 39,
+      "segments": [
+        {
+          "speaker": "Miss Ivors",
+          "text": "And haven't you your own land to visit?"
+        },
+        {
+          "text": "Heat comes into your forehead before the answer is ready."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Retort that you are sick of your own country.",
+          "next": "gretta_galway",
+          "changes": {
+            "val": -8,
+            "addFlag": "answered_ivors_coldly",
+            "set": {
+              "public_composure": "brittle"
+            }
+          }
+        },
+        {
+          "text": "Let the dance carry the question away unanswered.",
+          "next": "gretta_galway",
+          "changes": {
+            "val": 3
+          }
+        }
+      ]
+    },
+    "ivors_softened": {
+      "title": "A Warm Hand",
+      "scene": {
+        "id": "dance_floor",
+        "name": "Dance Floor",
+        "type": "major",
+        "description": "The music turns the argument without ending it."
+      },
+      "progress": 39,
+      "segments": [
+        {
+          "text": "Miss Ivors presses your hand in the chain. For a moment accusation and friendship occupy the same gesture."
+        },
+        {
+          "speaker": "Miss Ivors",
+          "text": "Then you will think of it."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Bow as the figure ends.",
+          "next": "gretta_galway",
+          "changes": {
+            "val": 4
+          }
+        }
+      ]
+    },
+    "gretta_galway": {
+      "title": "Gretta's Wish",
+      "scene": {
+        "id": "drawing_room_window",
+        "name": "Window Embrasure",
+        "type": "major",
+        "description": "The glass is cold under your tapping fingers."
+      },
+      "progress": 42,
+      "segments": [
+        {
+          "speaker": "Gretta",
+          "text": "O, do go, Gabriel. I'd love to see Galway again."
+        },
+        {
+          "text": "The west has crossed from Miss Ivors' mouth into your wife's."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Say coldly that she can go if she likes.",
+          "next": "speech_window",
+          "changes": {
+            "val": -6,
+            "set": {
+              "gretta_distance": "distant"
+            }
+          }
+        },
+        {
+          "text": "Ask whether she misses it.",
+          "next": "speech_window",
+          "changes": {
+            "val": 7,
+            "addFlag": "accepted_west"
+          }
+        }
+      ]
+    },
+    "speech_window": {
+      "title": "The Headings",
+      "scene": {
+        "id": "drawing_room_window",
+        "name": "Window Embrasure",
+        "type": "major",
+        "description": "Beyond the window the park and the monument are only imagined whiteness."
+      },
+      "progress": 45,
+      "segments": [
+        {
+          "text": "Irish hospitality. Sad memories. The Three Graces. Paris. The quotation."
+        },
+        {
+          "text": "Miss Ivors will not be sorry to see you fail. Or perhaps she has already forgotten you."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Insert a small barb against the new generation.",
+          "next": "julia_song",
+          "changes": {
+            "val": -4,
+            "addFlag": "used_barb_in_speech",
+            "set": {
+              "speech_tone": "barbed"
+            }
+          }
+        },
+        {
+          "text": "Keep the speech for your aunts, not for Miss Ivors.",
+          "next": "julia_song",
+          "changes": {
+            "val": 6,
+            "set": {
+              "speech_tone": "warm"
+            }
+          }
+        }
+      ]
+    },
+    "julia_song": {
+      "title": "Arrayed for the Bridal",
+      "scene": {
+        "id": "drawing_room",
+        "name": "Drawing Room",
+        "type": "major",
+        "description": "Aunt Julia stands by the piano, no longer smiling, her voice pitched into the room."
+      },
+      "progress": 49,
+      "segments": [
+        {
+          "text": "Her voice attacks the old air with a strength her face does not promise. Without looking at her, one could believe in swift flight."
+        },
+        {
+          "text": "When the applause comes, colour struggles into her face."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Applaud loudly with the others.",
+          "next": "kate_defends_julia",
+          "changes": {
+            "val": 4,
+            "addFlag": "praised_julia_plainly"
+          }
+        },
+        {
+          "text": "Notice only how old she looks after the song.",
+          "next": "kate_defends_julia",
+          "changes": {
+            "val": 7
+          }
+        }
+      ]
+    },
+    "kate_defends_julia": {
+      "title": "Not Just",
+      "scene": {
+        "id": "drawing_room",
+        "name": "Drawing Room",
+        "type": "major",
+        "description": "The applause has scarcely settled before old grievances find room."
+      },
+      "progress": 52,
+      "segments": [
+        {
+          "speaker": "Aunt Kate",
+          "text": "There is such a thing as common everyday politeness and gratitude."
+        },
+        {
+          "text": "The room smiles and shifts. Julia's song remains in it, but already as something past."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Help Mary Jane turn everyone toward supper.",
+          "next": "supper_start",
+          "changes": {
+            "val": 1
+          }
+        },
+        {
+          "text": "Let Kate's anger have its dignity before the table claims you.",
+          "next": "supper_start",
+          "changes": {
+            "val": 5
+          }
+        }
+      ]
+    },
+    "supper_start": {
+      "chapterTitle": "III. The Table",
+      "title": "The Goose",
+      "scene": {
+        "id": "supper_room",
+        "name": "Supper Room",
+        "type": "major",
+        "description": "Goose, ham, spiced beef, jellies, almonds, raisins, bottles, knives and orders crowd the table.",
+        "arrival": "Aunt Kate finds you at last and sets you at the head."
+      },
+      "progress": 56,
+      "segments": [
+        {
+          "text": "The carver sits well in your hand. For the first time tonight, a task fits you exactly."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Carve with easy good humour.",
+          "next": "supper_talk",
+          "changes": {
+            "val": 2,
+            "set": {
+              "public_composure": "steady"
+            }
+          }
+        },
+        {
+          "text": "Serve everyone and keep none for yourself.",
+          "next": "supper_talk",
+          "changes": {
+            "val": 4
+          }
+        }
+      ]
+    },
+    "supper_talk": {
+      "title": "Coffins",
+      "scene": {
+        "id": "supper_room",
+        "name": "Supper Room",
+        "type": "major",
+        "description": "The table noise is warm enough to bury almost any subject."
+      },
+      "progress": 59,
+      "segments": [
+        {
+          "text": "Opera names pass over the plates. Then monks, silence, two in the morning, coffins."
+        },
+        {
+          "speaker": "Mary Jane",
+          "text": "The coffin is to remind them of their last end."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Let the lugubrious subject die in the tablecloth.",
+          "next": "toast_prepare",
+          "changes": {
+            "val": 3
+          }
+        },
+        {
+          "text": "Make a little joke before silence can settle.",
+          "next": "toast_prepare",
+          "changes": {
+            "val": -2
+          }
+        }
+      ]
+    },
+    "toast_prepare": {
+      "title": "Silence at the Table",
+      "scene": {
+        "id": "supper_room",
+        "name": "Supper Room",
+        "type": "major",
+        "description": "The glasses are filled. The three hostesses look down at the cloth."
+      },
+      "progress": 62,
+      "segments": [
+        {
+          "text": "A few gentlemen pat the table. You push back your chair and lean ten trembling fingers on the cloth."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Begin with the old formula of gratitude.",
+          "next": "toast_speech",
+          "changes": {
+            "val": 2
+          }
+        },
+        {
+          "text": "Feel the room turn upward to you and nearly sit down again.",
+          "next": "ending_rash_table",
+          "changes": {
+            "importantFlag": {
+              "flag": "abandoned_speech",
+              "label": "Abandoned the toast"
+            }
+          }
+        }
+      ]
+    },
+    "toast_speech": {
+      "title": "Hospitality",
+      "scene": {
+        "id": "supper_room",
+        "name": "Supper Room",
+        "type": "major",
+        "description": "Beyond the door the piano is playing a waltz tune."
+      },
+      "progress": 66,
+      "segments": [
+        {
+          "text": "The words come. Hospitality, absent faces, living duties, the Three Graces of the Dublin musical world."
+        },
+        {
+          "text": "They laugh at the right place. Aunt Kate takes out her handkerchief."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Let the toast close warmly.",
+          "next": "after_toast",
+          "changes": {
+            "val": 5
+          }
+        },
+        {
+          "text": "Let the sentence about the new generation cut a little deeper.",
+          "next": "after_toast",
+          "changes": {
+            "val": -4,
+            "addFlag": "used_barb_in_speech"
+          }
+        }
+      ]
+    },
+    "after_toast": {
+      "title": "Which Nobody Can Deny",
+      "scene": {
+        "id": "supper_room",
+        "name": "Supper Room",
+        "type": "major",
+        "description": "The song rises from the table, fork and glass and voice joined for a moment."
+      },
+      "progress": 69,
+      "segments": [
+        {
+          "text": "All the guests turn toward the three ladies. Freddy beats time with a pudding-fork."
+        },
+        {
+          "text": "The evening has accepted your words. That should have been enough."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Join the last chorus and let the house have its triumph.",
+          "next": "departure_hall",
+          "changes": {
+            "val": 3
+          }
+        }
+      ]
+    },
+    "departure_hall": {
+      "chapterTitle": "IV. Distant Music",
+      "title": "The Hall Again",
+      "scene": {
+        "id": "morkan_hall_departure",
+        "name": "Morkan House Hall",
+        "type": "major",
+        "description": "The morning air enters the hall; coats, jokes and farewells overlap.",
+        "arrival": "The party is breaking into parcels and directions."
+      },
+      "progress": 72,
+      "segments": [
+        {
+          "text": "Mr Browne laughs at the doorstep. Freddy has found only one cab. Your aunts advise everyone at once."
+        },
+        {
+          "text": "Then you see Gretta near the top of the first flight."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Look up and hold the others quiet.",
+          "next": "staircase_song",
+          "changes": {
+            "val": 8,
+            "addFlag": "noticed_gretta_stairs"
+          }
+        },
+        {
+          "text": "Attend to the cab arrangements instead.",
+          "next": "staircase_missed",
+          "changes": {
+            "val": -5
+          }
+        }
+      ]
+    },
+    "staircase_missed": {
+      "title": "Almost Missed",
+      "scene": {
+        "id": "morkan_hall_departure",
+        "name": "Morkan House Hall",
+        "type": "major",
+        "description": "The door closes and at last the sound from above becomes audible."
+      },
+      "progress": 74,
+      "segments": [
+        {
+          "text": "Only when the laughter thins do you hear the uncertain notes of a man's voice. Gretta is still on the stairs."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Now look at her.",
+          "next": "staircase_song",
+          "changes": {
+            "val": 4,
+            "addFlag": "noticed_gretta_stairs"
+          }
+        }
+      ]
+    },
+    "staircase_song": {
+      "title": "Distant Music",
+      "scene": {
+        "id": "staircase_shadow",
+        "name": "Staircase",
+        "type": "major",
+        "description": "The gaslight leaves Gretta half in shadow. The song is upstairs and far away.",
+        "arrival": "She leans on the banisters as if she were listening for someone outside the house."
+      },
+      "progress": 76,
+      "segments": [
+        {
+          "text": "If you were a painter, you would paint her so. Distant Music, you would call it."
+        },
+        {
+          "speaker": "D'Arcy",
+          "text": "O, the rain falls on my heavy locks..."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ask for silence until the air is gone.",
+          "next": "song_name",
+          "changes": {
+            "val": 8,
+            "addFlag": "held_silence",
+            "set": {
+              "heard_song": true
+            }
+          }
+        },
+        {
+          "text": "Let Mary Jane hurry upstairs to capture the singer.",
+          "next": "song_name",
+          "changes": {
+            "val": 2,
+            "set": {
+              "heard_song": true
+            }
+          }
+        }
+      ]
+    },
+    "song_name": {
+      "title": "The Lass of Aughrim",
+      "scene": {
+        "id": "morkan_hall_departure",
+        "name": "Morkan House Hall",
+        "type": "major",
+        "description": "Scarves are tied; Mr D'Arcy swathes his throat with wounded pride."
+      },
+      "progress": 79,
+      "segments": [
+        {
+          "speaker": "Gretta",
+          "text": "What is the name of that song you were singing?"
+        },
+        {
+          "speaker": "D'Arcy",
+          "text": "The Lass of Aughrim."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Watch Gretta's eyes as she repeats the title.",
+          "next": "snow_walk",
+          "changes": {
+            "val": 7,
+            "addFlag": "asked_song_name",
+            "unlockAchievement": "ach_song"
+          }
+        },
+        {
+          "text": "Think only that the night is turning romantic.",
+          "next": "snow_walk",
+          "changes": {
+            "val": -3
+          }
+        }
+      ]
+    },
+    "snow_walk": {
+      "title": "The Quay",
+      "scene": {
+        "id": "snow_quay",
+        "name": "The Quay",
+        "type": "major",
+        "description": "Slush lies underfoot. The lamps burn redly in the murky air.",
+        "arrival": "The morning is still dark."
+      },
+      "progress": 82,
+      "segments": [
+        {
+          "text": "Gretta walks before you with Mr D'Arcy, her shoes in a brown parcel, her skirt lifted from the slush."
+        },
+        {
+          "text": "Your old tenderness returns with a new heat. You want to be alone with her."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Store the image of her on the stairs like a painting.",
+          "next": "cab_to_hotel",
+          "changes": {
+            "val": 5
+          }
+        },
+        {
+          "text": "Think of the hotel room and hurry the party onward.",
+          "next": "cab_to_hotel",
+          "changes": {
+            "val": -4
+          }
+        },
+        {
+          "text": "Ask her at once what the song was to her.",
+          "next": "early_question",
+          "changes": {
+            "val": 8,
+            "addFlag": "asked_song_name"
+          }
+        }
+      ]
+    },
+    "early_question": {
+      "title": "Too Soon",
+      "scene": {
+        "id": "snow_quay",
+        "name": "The Quay",
+        "type": "major",
+        "description": "The river and the street take the question without answering it."
+      },
+      "progress": 83,
+      "segments": [
+        {
+          "speaker": "Gretta",
+          "text": "Not here, Gabriel."
+        },
+        {
+          "text": "She does not say it harshly. That makes it harder to answer."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Let the cab's rattle save you from more words.",
+          "next": "cab_to_hotel",
+          "changes": {
+            "val": 4,
+            "set": {
+              "gretta_distance": "distant"
+            }
+          }
+        }
+      ]
+    },
+    "cab_to_hotel": {
+      "title": "White Horse",
+      "scene": {
+        "id": "cab",
+        "name": "Cab Across the City",
+        "type": "major",
+        "description": "The old horse drags the rattling box under the heavy morning sky."
+      },
+      "progress": 85,
+      "segments": [
+        {
+          "text": "Conversation breaks into small remarks about streets and buildings. Gretta looks out of the window and seems tired."
+        },
+        {
+          "text": "Snow lies on the statue when you cross the bridge."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Make the joke and wave good-night to Dan.",
+          "next": "hotel_stairs",
+          "changes": {
+            "val": -1
+          }
+        },
+        {
+          "text": "Say nothing and watch the snow on stone.",
+          "next": "hotel_stairs",
+          "changes": {
+            "val": 5
+          }
+        }
+      ]
+    },
+    "hotel_stairs": {
+      "chapterTitle": "V. The Room",
+      "title": "The Gresham",
+      "scene": {
+        "id": "gresham_stairs",
+        "name": "Hotel Stairs",
+        "type": "major",
+        "description": "The porter carries a guttering candle. The carpet takes the sound of your feet.",
+        "arrival": "Gretta climbs ahead with her head bowed."
+      },
+      "progress": 88,
+      "segments": [
+        {
+          "text": "The wax falls into the tray. Your heart answers it in your ribs."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Hold yourself still until the porter opens the room.",
+          "next": "hotel_room",
+          "changes": {
+            "val": 3
+          }
+        },
+        {
+          "text": "Let impatience show in your voice.",
+          "next": "hotel_room",
+          "changes": {
+            "val": -4,
+            "set": {
+              "gretta_distance": "closed"
+            }
+          }
+        }
+      ]
+    },
+    "hotel_room": {
+      "title": "Enough Light",
+      "scene": {
+        "id": "hotel_room",
+        "name": "Hotel Room",
+        "type": "major",
+        "description": "Street light lies in a long shaft from the window to the door. The mirror waits in it.",
+        "arrival": "You send the porter away with his candle."
+      },
+      "progress": 90,
+      "segments": [
+        {
+          "text": "Gretta stands before the swinging mirror, unhooking her waist. When you say her name, she turns with a face so serious and weary that your words fail."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ask only whether she is tired.",
+          "next": "freddy_talk",
+          "changes": {
+            "val": 4
+          }
+        },
+        {
+          "text": "Try to draw her back by talking of Freddy Malins.",
+          "next": "freddy_talk",
+          "changes": {
+            "val": -3,
+            "addFlag": "pressed_gretta"
+          }
+        },
+        {
+          "text": "Leave the room rather than stand inside her silence.",
+          "next": "rash_corridor_01",
+          "changes": {
+            "importantFlag": {
+              "flag": "refused_gretta_story",
+              "label": "Refused the silence"
+            }
+          }
+        }
+      ]
+    },
+    "rash_corridor_01": {
+      "title": "The Corridor",
+      "scene": {
+        "id": "hotel_corridor",
+        "name": "Hotel Corridor",
+        "type": "major",
+        "description": "The carpet gives back no sound. The door behind you is almost closed."
+      },
+      "progress": 92,
+      "segments": [
+        {
+          "text": "You tell yourself she is tired, that morning makes nonsense of all moods, that the song was only a song."
+        },
+        {
+          "text": "In the room behind you a woman is left with a memory you have chosen not to hear."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Keep walking.",
+          "next": "ending_rash_corridor"
+        }
+      ]
+    },
+    "freddy_talk": {
+      "title": "A False Voice",
+      "scene": {
+        "id": "hotel_room",
+        "name": "Hotel Room",
+        "type": "major",
+        "description": "The street lamp keeps the room half public, half secret."
+      },
+      "progress": 92,
+      "segments": [
+        {
+          "text": "You speak of Freddy's pound, of decency, of small matters that cannot account for the room."
+        },
+        {
+          "text": "Then Gretta crosses to you and kisses you lightly."
+        },
+        {
+          "speaker": "Gretta",
+          "text": "You are a very generous person, Gabriel."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ask what she is thinking about.",
+          "next": "gretta_song_reveal",
+          "changes": {
+            "val": 3
+          }
+        },
+        {
+          "text": "Hold the kiss as proof and press nearer.",
+          "next": "gretta_song_reveal",
+          "changes": {
+            "val": -6,
+            "addFlag": "pressed_gretta"
+          }
+        }
+      ]
+    },
+    "gretta_song_reveal": {
+      "title": "That Song",
+      "scene": {
+        "id": "hotel_room",
+        "name": "Hotel Room",
+        "type": "major",
+        "description": "The mirror shows too much of the room and not enough of her."
+      },
+      "progress": 94,
+      "segments": [
+        {
+          "speaker": "Gretta",
+          "text": "O, I am thinking about that song, The Lass of Aughrim."
+        },
+        {
+          "text": "She breaks from you and hides her face against the bed-rail."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ask who once sang it.",
+          "next": "michael_named",
+          "changes": {
+            "val": 5
+          }
+        },
+        {
+          "text": "Ask whether she was in love with him.",
+          "next": "michael_named",
+          "changes": {
+            "val": -5,
+            "addFlag": "pressed_gretta"
+          }
+        },
+        {
+          "text": "Say she need not tell you.",
+          "next": "quiet_without_story",
+          "changes": {
+            "val": 4
+          }
+        }
+      ]
+    },
+    "quiet_without_story": {
+      "title": "A Story Unopened",
+      "scene": {
+        "id": "hotel_room",
+        "name": "Hotel Room",
+        "type": "major",
+        "description": "The bed-rail receives her tears. The window receives the snowlight."
+      },
+      "progress": 95,
+      "segments": [
+        {
+          "text": "For a time she says nothing. You have been kind, perhaps. You have also left a door closed."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Sit beside the closed story.",
+          "next": "glass_before_ending"
+        },
+        {
+          "text": "Ask again, gently.",
+          "next": "michael_named",
+          "changes": {
+            "val": 4
+          }
+        }
+      ]
+    },
+    "glass_before_ending": {
+      "title": "Beside the Bed",
+      "scene": {
+        "id": "hotel_room_window",
+        "name": "Hotel Room Window",
+        "type": "major",
+        "description": "Gretta grows quiet. The window keeps its pale square of street light.",
+        "arrival": "You sit where the story might have opened."
+      },
+      "progress": 98,
+      "segments": [
+        {
+          "text": "You have spared her another telling, or spared yourself the hearing of it. The difference is hard to name while she breathes unevenly into the quilt."
+        },
+        {
+          "text": "At the window, snow begins again with the patience of something that does not need to be invited."
+        }
+      ],
+      "next": "ending_normal_glass"
+    },
+    "michael_named": {
+      "title": "Michael Furey",
+      "scene": {
+        "id": "hotel_room",
+        "name": "Hotel Room",
+        "type": "major",
+        "description": "The room has narrowed to her voice."
+      },
+      "progress": 96,
+      "segments": [
+        {
+          "speaker": "Gretta",
+          "text": "It was a young boy I used to know in Galway, named Michael Furey."
+        },
+        {
+          "text": "The name stands in the room with you."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ask coldly whether that was why she wished to go to Galway.",
+          "next": "michael_dead",
+          "changes": {
+            "val": -8,
+            "addFlag": "pressed_gretta"
+          }
+        },
+        {
+          "text": "Ask what became of him.",
+          "next": "michael_dead",
+          "changes": {
+            "val": 6
+          }
+        }
+      ]
+    },
+    "michael_dead": {
+      "title": "Only Seventeen",
+      "scene": {
+        "id": "hotel_room",
+        "name": "Hotel Room",
+        "type": "major",
+        "description": "The street lamp makes the window a pale square beside her grief."
+      },
+      "progress": 97,
+      "segments": [
+        {
+          "speaker": "Gretta",
+          "text": "He is dead. He died when he was only seventeen."
+        },
+        {
+          "text": "Your irony fails before the dead boy in the gasworks."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Let jealousy speak once more.",
+          "next": "michael_rain",
+          "changes": {
+            "val": -9,
+            "addFlag": "pressed_gretta"
+          }
+        },
+        {
+          "text": "Ask, more humbly, what he died of.",
+          "next": "michael_rain",
+          "changes": {
+            "val": 8
+          }
+        }
+      ]
+    },
+    "michael_rain": {
+      "title": "The Rain",
+      "scene": {
+        "id": "nuns_island_memory",
+        "name": "Nuns' Island",
+        "type": "major",
+        "description": "A wet window, a back garden, a wall, a tree at the end of it.",
+        "arrival": "Gretta's voice carries the room westward."
+      },
+      "progress": 98,
+      "segments": [
+        {
+          "speaker": "Gretta",
+          "text": "I think he died for me."
+        },
+        {
+          "text": "She tells you of gravel at the window, rain on the glass, the delicate boy standing in the garden and saying he did not want to live."
+        },
+        {
+          "text": "Afterward she sobs into the quilt until the story is no longer speech."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Hold her hand until the story finishes.",
+          "next": "reckoning",
+          "changes": {
+            "val": 10,
+            "importantFlag": {
+              "flag": "received_the_dead",
+              "label": "Received the story"
+            },
+            "addFlag": "heard_michael"
+          }
+        },
+        {
+          "text": "Withdraw into the humiliation of being compared.",
+          "next": "reckoning",
+          "changes": {
+            "val": -10,
+            "addFlag": "heard_michael"
+          }
+        }
+      ]
+    },
+    "reckoning": {
+      "title": "The Mirror",
+      "scene": {
+        "id": "hotel_room_window",
+        "name": "Hotel Room Window",
+        "type": "major",
+        "description": "Gretta sleeps. A boot lies on its side. A petticoat string touches the floor.",
+        "arrival": "You walk quietly to the window."
+      },
+      "progress": 99,
+      "segments": [
+        {
+          "text": "She had had that romance in her life. A man had died for her sake."
+        },
+        {
+          "text": "Aunt Julia, too, will soon be a shade. One by one they are all becoming shades."
+        }
+      ],
+      "routes": [
+        {
+          "condition": {
+            "all": [
+              {
+                "flag": "received_the_dead"
+              },
+              {
+                "flag": "held_silence"
+              },
+              {
+                "flag": "accepted_west"
+              }
+            ]
+          },
+          "next": "ending_special_voice"
+        },
+        {
+          "condition": {
+            "all": [
+              {
+                "flag": "received_the_dead"
+              },
+              {
+                "var": "val",
+                "op": ">=",
+                "value": 55
+              }
+            ]
+          },
+          "next": "ending_true_snow"
+        },
+        {
+          "condition": {
+            "all": [
+              {
+                "flag": "heard_michael"
+              },
+              {
+                "var": "val",
+                "op": "<",
+                "value": 35
+              }
+            ]
+          },
+          "next": "ending_branch_jealous"
+        },
+        {
+          "condition": {
+            "all": [
+              {
+                "flag": "heard_michael"
+              },
+              {
+                "flag": "accepted_west"
+              }
+            ]
+          },
+          "next": "ending_branch_west"
+        },
+        {
+          "condition": "default",
+          "next": "ending_normal_glass"
+        }
+      ]
+    },
+    "ending_true_snow": {
+      "isEnding": true,
+      "title": "Faintly Falling",
+      "type": "TRUE ENDING",
+      "progress": 100,
+      "ambient": "wind",
+      "achievement": "ach_true_snow",
+      "description": "You lie down beside Gretta without waking her. The room has grown cold around your shoulders. In the dark you see, or nearly see, a young man under a dripping tree, and beyond him other forms, wayward and flickering, who had once made the solid world.",
+      "closing": "Snow falls softly through the universe, upon all the living and the dead.",
+      "effect": "cold"
+    },
+    "ending_branch_jealous": {
+      "isEnding": true,
+      "title": "The Warm Room",
+      "type": "BRANCH ENDING",
+      "progress": 100,
+      "ambient": "none",
+      "achievement": "ach_jealous",
+      "description": "You keep your back to the window. The boy from Galway remains a rival because that is easier than letting him become dead. Gretta sleeps, spent by a grief you have already begun to call excessive.",
+      "closing": "The room stays warm. Outside it, snow goes on without you.",
+      "effect": "silence"
+    },
+    "ending_normal_glass": {
+      "isEnding": true,
+      "title": "Glass Between",
+      "type": "NORMAL ENDING",
+      "progress": 100,
+      "ambient": "wind",
+      "achievement": "ach_glass",
+      "description": "You watch the pane brighten and darken with the falling snow. You have heard enough to know that the life beside you is not wholly yours, but not enough to follow where the knowledge leads.",
+      "closing": "The flakes touch the glass and vanish there.",
+      "effect": "breath"
+    },
+    "ending_branch_west": {
+      "isEnding": true,
+      "title": "Westward",
+      "type": "BRANCH ENDING",
+      "progress": 100,
+      "ambient": "wind",
+      "achievement": "ach_westward",
+      "description": "In your mind the city gives way to darker ground: the plain, the Shannon waves, the hill where the boy is buried. It is not forgiveness and not defeat. It is the beginning of knowing that the west has been in the room all evening.",
+      "closing": "By morning, the journey has already started.",
+      "effect": "cold"
+    },
+    "ending_special_voice": {
+      "isEnding": true,
+      "title": "A Voice Under Rain",
+      "type": "SPECIAL ENDING",
+      "progress": 100,
+      "ambient": "wind",
+      "achievement": "ach_voice",
+      "description": "Because you listened before you desired, the song returns less as accusation than as weather. Michael Furey is not only a boy who died for her. He is a voice carried through rain, through Gretta, through the old house, through Julia's fading song.",
+      "closing": "For a moment, all music is made by the dead and lent to the living.",
+      "effects": [
+        "breath",
+        "cold"
+      ]
+    },
+    "ending_rash_door": {
+      "isEnding": true,
+      "title": "The Door Left Open",
+      "type": "RASH ENDING",
+      "progress": 100,
+      "ambient": "wind",
+      "achievement": "ach_door",
+      "description": "You leave before the dance can receive you. Behind the door the old women recover themselves, Gretta is folded into the upstairs laughter, and your name becomes a difficulty politely stepped around.",
+      "closing": "The snow has a large country to cover, and you have made yourself small in it.",
+      "effect": "cold"
+    },
+    "ending_rash_laughter": {
+      "isEnding": true,
+      "title": "Bad Form",
+      "type": "RASH ENDING",
+      "progress": 100,
+      "ambient": "none",
+      "achievement": "ach_laughter",
+      "description": "Freddy is not sober, but neither is he the only fragile thing in the house. Your severity spreads faster than drunkenness. The young ladies remember the silence; Aunt Kate remembers who caused it.",
+      "closing": "A good evening can survive much, but not a man proud of being right.",
+      "effect": "silence"
+    },
+    "ending_rash_table": {
+      "isEnding": true,
+      "title": "No Toast",
+      "type": "RASH ENDING",
+      "progress": 100,
+      "ambient": "none",
+      "achievement": "ach_table",
+      "description": "The table waits for the customary words and receives your refusal instead. Someone laughs too late. Mary Jane covers the gap; Aunt Kate thanks the company with trembling cheer.",
+      "closing": "Without the toast, even the food seems to have been served in error.",
+      "effect": "silence"
+    },
+    "ending_rash_corridor": {
+      "isEnding": true,
+      "title": "The Corridor",
+      "type": "RASH ENDING",
+      "progress": 100,
+      "ambient": "wind",
+      "achievement": "ach_corridor",
+      "description": "You walk until the corridor turns and the room is no longer visible. By morning you will return with a reason: fatigue, wine, the lateness of the hour. Reasons are easy things.",
+      "closing": "The story remains behind the door, and still it ages there.",
+      "effect": "blackout"
+    }
+  }
+}
