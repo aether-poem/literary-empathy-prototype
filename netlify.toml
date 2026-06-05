@@ -1,0 +1,17 @@
+[build]
+command = "npm run build"
+publish = "dist"
+
+# If the Python backend is deployed separately, uncomment this block and
+# replace the target with the public backend URL.
+#
+# [[redirects]]
+# from = "/api/*"
+# to = "https://YOUR_BACKEND_DOMAIN/api/:splat"
+# status = 200
+# force = true
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
