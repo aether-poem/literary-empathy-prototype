@@ -60,6 +60,15 @@
         >
           <span class="relative z-10">Interactive Story Game</span>
         </button>
+
+        <a
+          href="https://github.com/aether-poem/TRPG-World-Status"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-10 py-3 border border-white/10 text-gray-400 rounded-full text-sm tracking-wider transition-all duration-500 hover:border-empathy-rose/50 hover:text-empathy-rose"
+        >
+          Ontology World Status
+        </a>
         
         <p class="text-gray-600 text-xs tracking-wide">
           Exploration has no end. Only deeper understanding.
