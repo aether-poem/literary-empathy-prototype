@@ -10,7 +10,7 @@ own story JSON.
 The TRPG World Status pipeline has been separated into its own repository:
 
 ```text
-https://github.com/Lotus-cot/TRPG-World-Status
+https://github.com/aether-poem/TRPG-World-Status
 ```
 
 ## Features
@@ -20,6 +20,7 @@ https://github.com/Lotus-cot/TRPG-World-Status
 - Memory board, relation graph, reflection, and ending views.
 - Interactive Story Game page with 52 story nodes, 9 endings, and 12 achievements.
 - Static game assets that can be hosted with the Vue frontend.
+- External access to the public ontology-oriented TRPG World Status tool.
 
 ## Technology Stack
 
@@ -106,9 +107,10 @@ fallbacks.
 
 - This repository no longer contains the TRPG World Status backend.
 - The DeepSeek API key and AllenNLP model files belong in the separate
-  `Lotus-cot/TRPG-World-Status` repository, not in this frontend collaboration
+  `aether-poem/TRPG-World-Status` repository, not in this frontend collaboration
   repository.
 - The interactive game is static and does not call DeepSeek or any backend API.
+- The external World Status tool provides clickable micro, meso, macro, context, and full-JSON result filters.
 
 ## License
 
